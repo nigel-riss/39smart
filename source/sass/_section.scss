@@ -1,0 +1,74 @@
+.section {
+    // positioning
+    position: relative;
+
+    // box model
+    padding-top: 20px;
+
+    &::before {
+        content: "";
+
+        // positioning
+        position: absolute;
+        top: 45px;
+
+        // box model
+        display: block;
+        height: 1px;
+        width: 100%;
+
+        // visual
+        background-color: $greyBack;
+        // background-color: red;
+        // border: 1px solid red;
+    }
+
+    &__info {
+        // positioning
+        position: relative;
+
+        // box model
+        margin: 0 30px;
+        padding-bottom: 20px;
+
+        // visual
+        background-color: $whiteBack;
+        // background-color: red;
+    }
+
+    &__caption {
+        // box model
+        display: block;
+        padding: 0;
+        margin: 0;
+        // border: 1px solid red;
+
+        // typography
+        color: $mainColor;
+        font-size: 20px;
+        // font-size: 24px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    &__description {
+        // box model
+        padding: 0;
+        margin: 0;
+
+        // typography
+        color: $grey54;
+        font-size: 14px;
+        // font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    &__container {
+        // box model
+        padding: 20px 0;
+
+        // visual
+        background-color: $greyBack;
+    }
+}

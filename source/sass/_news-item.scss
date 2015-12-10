@@ -1,0 +1,40 @@
+.news-item {
+    // box model
+    margin-bottom: 20px;
+
+    // visual
+    background-color: $whiteBack;
+    @include itemShadow;
+
+    &__caption {
+        // box model
+        padding-left: 20px;
+
+        // typography
+        color: $grey87;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 80px;
+    }
+
+    &__image-container {
+        // box model
+        width: 100%;
+    }
+
+    &__image {
+        // box model
+        width: 100%;
+    }
+
+    &__text {
+        // box model
+        padding: 30px 20px;
+
+        // typography
+        color: $grey54;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+}

@@ -1,0 +1,46 @@
+.hero {
+    //
+}
+
+.hero-ads {
+    //
+}
+
+.small-block {
+    // box model
+    height: 160px;
+    margin-bottom: 20px;
+
+    // visual 
+    background-color: $mainColor;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    border-radius: 2px;
+
+    &--1 {
+        // visual
+        background-image: url("../img/small-block-1.png");
+    }
+
+    &--2 {
+        // visual
+        background-image: url("../img/small-block-2.png");
+    }
+
+    &--3 {
+        // visual
+        background-image: url("../img/small-block-3.png");
+    }
+
+    &__text {
+        // box model
+        padding: 20px;
+        // border: 1px solid red;
+        width: 200px;
+
+        // typography
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 400;
+    }
+}

@@ -1,0 +1,46 @@
+@import "normalize";
+@import "mixins";
+@import "vars";
+@import "fonts";
+
+* {
+    // box model
+    box-sizing: border-box;
+}
+
+body {
+    // box model
+    padding: 0;
+    margin: 0;
+    width: 320px;
+    // max-width: 768px;
+    margin: 0 auto;
+    border: 1px solid #cccccc;
+
+    // typography
+    font-family: $mainFont;
+    font-weight: 300;
+    // font-size: 0;
+}
+
+html {
+    // box model
+    width: 100%;
+    // border: 1px solid red;
+}
+
+.container {
+    // box model
+    padding: 0 10px;
+}
+
+@import "main-header";
+@import "logo";
+@import "contact-info";
+@import "main-nav";
+@import "search";
+@import "hero";
+@import "section";
+@import "item";
+@import "write-us";
+@import "news-item";

@@ -1,0 +1,50 @@
+.write-us {
+    // box model
+    height: 200px;
+    margin: 20px 0;
+    padding: 0 10px;
+
+    // typography
+    text-align: center;
+
+    // visual
+    background-image: url("../img/write-us.jpg");
+    background-position: center center;
+
+    &__caption {
+        // box model
+        padding-top: 20px;
+        padding-bottom: 10px;
+
+        // typography
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    &__email {
+        // box model
+        display: inline-block;
+        height: 40px;
+        width: 100%;
+        border: none;
+        border: 1px solid #cccccc;
+        padding: 0 20px;
+        margin-bottom: 20px;
+
+        // typography
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 40px;
+
+        // visual
+        border-radius: 20px;
+    }
+
+    &__submit {
+        //
+        @include justButton;
+    }
+}

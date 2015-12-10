@@ -1,0 +1,22 @@
+@mixin itemShadow {
+    box-shadow: 0 1px 7px .14px rgba(0,0,0,.12),
+    0 3px 4.7px .3px rgba(0, 0, 0, .24);
+}
+
+@mixin justButton {
+    // box model
+    border: none;
+    padding: 0 40px;
+
+    // typography
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 36px;
+    text-transform: uppercase;
+
+    // visual
+    background-color: $mainColor;
+    border-radius: 2px;
+    box-shadow: 0 3px 4.7px .3px rgba(0, 0, 0, .24);
+}

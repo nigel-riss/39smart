@@ -1,0 +1,29 @@
+.search {
+    &__form {
+        // box model
+        margin-top: 20px;
+        //
+        // border: 1px solid red;
+
+        // visual
+        // background-color: $mainColor;
+    }
+
+    &__input {
+        // box model
+        display: block;
+        height: 40px;
+        width: 100%;
+        border: none;
+        border: 1px solid #cccccc;
+        padding: 0 20px;
+
+        // typography
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 40px;
+
+        // visual
+        border-radius: 20px;
+    }
+}

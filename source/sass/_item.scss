@@ -1,0 +1,147 @@
+.item {
+    // box model
+    height: 180px;
+    padding: 20px;
+    margin-bottom: 20px;
+
+    // typography
+    font-size: 0;
+
+    // visual
+    background-color: $whiteBack;
+    @include itemShadow;
+
+    &__info {
+        // positioning
+        position: relative;
+
+        // box model
+        display: inline-block;
+        vertical-align: top;
+        width: 118px;
+        height: 100%;
+
+        // visual
+        z-index: 1;
+    }
+
+    &__brand {
+        // typography
+        color: $grey87;
+        font-size: 20px;
+        font-weight: 400;
+        white-space: nowrap;
+    }
+
+    &__model {
+        // typography
+        color: $grey54;
+        font-size: 14px;
+        font-weight: 400;
+        white-space: nowrap;
+    }
+
+    &__price {
+        // positioning
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        // typography
+        color: $mainColor;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    &__super-price {
+        // positioning
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+
+        // typography
+        color: $emColor;
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    &__old-price {
+        // positioning
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+
+        // typography
+        color: $grey54;
+        font-size: 12px;
+        font-weight: 500;
+        text-decoration: line-through;
+        text-transform: uppercase;
+    }
+
+    &__super-price-icon {
+        // positioning
+        position: absolute;
+        top: 48px;
+        left: 32px;
+
+        // box model
+        height: 48px;
+        width: 48px;
+        padding-top: 12px;
+
+        // typography
+        color: $whiteBack;
+        font-size: 17px;
+        font-weight: 500;
+        text-align: center;
+        text-transform: uppercase;
+
+        // visual
+        background-color: $emColor;
+        border-radius: 50%;
+    }
+
+    &__sale-icon {
+        // positioning
+        position: absolute;
+        top: 48px;
+        left: 32px;
+
+        // box model
+        height: 48px;
+        width: 48px;
+        padding-top: 0;
+
+        // typography
+        color: $whiteBack;
+        font-size: 36px;
+        font-weight: 500;
+        text-align: center;
+        text-transform: uppercase;
+
+        // visual
+        background-color: $mainColor;
+        border-radius: 50%;
+    }
+
+    &__image-container {
+        // box model
+        display: inline-block;
+        vertical-align: top;
+        height: 140px;
+        width: 140px;
+        // float: right;
+        // border: 1px solid red;
+
+        // visual
+        overflow: hidden;
+    }
+
+    &__image {
+        // box model
+        width: 100%;
+    }
+}

@@ -1,0 +1,150 @@
+.contact-info {
+    //
+    // border: 1px solid red;
+}
+
+.contact {
+    // positioning
+    position: relative;
+
+    // box model
+    // display: block;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 30px;
+    padding-right: 10px;
+    padding-top: 20px;
+
+    &::before {
+        content: "";
+
+        // positioning
+        position: absolute;
+        top: 20px;
+        left: 0;
+
+        // box model
+        display: block;
+        height: 24px;
+        width: 24px;
+        // border: 1px solid red;
+
+        // typography
+        // font-family: "Material Icons";
+        // font-size: 24px;
+    }
+
+    &--address {
+        // box model
+        width: 100%;
+
+        &::before {
+            // visual
+            background-image: url("../img/icons/ic_place_24px.svg");
+        }
+    }
+
+    &--schedule {
+        // box model
+        width: 49%;
+
+        &::before {
+            // visual
+            background-image: url("../img/icons/ic_schedule_24px.svg");
+        }
+    }
+
+    &--phone {
+        // box model
+        width: 49%;
+
+        .contact__main {
+            // typography
+            font-size: 24px;
+            line-height: 20px;
+        }
+
+        &::before {
+            // visual
+            background-image: url("../img/icons/ic_phone_24px.svg");
+        }
+    }
+
+    &__main {
+        // typography
+        color: $grey87;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    &__additional {
+        // typography
+        color: $grey87;
+        font-size: 12px;
+        font-weight: 400;
+    }
+}
+
+.social-contacts {
+    //
+}
+
+.social-contact {
+    // positioning
+    position: relative;
+
+    // box model
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 30px;
+    padding-right: 10px;
+    padding-top: 20px;
+    width: 49%;
+
+    // typography
+    color: $grey87;
+    font-size: 15px;
+    font-weight: 400;
+
+    &::before {
+        content: "";
+
+        // positioning
+        position: absolute;
+
+        // box model
+        display: block;
+        height: 24px;
+        width: 24px;
+        // border: 1px solid red;
+
+        // typography
+        // font-family: "Material Icons";
+        // font-size: 24px;
+        // visual
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    &--vk {
+        &::before {
+            // positioning
+            top: 20px;
+            left: 0;
+
+            // visual
+            background-image: url("../img/icons/ic_vk.svg");
+        }
+    }
+
+    &--instagram {
+        &::before {
+            // positioning
+            top: 15px;
+            left: 0;
+
+            // visual
+            background-image: url("../img/icons/ic_instagram.svg");
+        }
+    }
+}
