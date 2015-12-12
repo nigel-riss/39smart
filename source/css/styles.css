@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -397,27 +398,25 @@ th {
 }
 
 @font-face {
-    font-family: "Material Icons";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://fonts.gstatic.com/s/materialicons/v10/2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2) format("woff2");
-}
-
-.material-icons {
-    color: #000000;
-    font-family: "Material Icons";
+    font-family: "icomoon";
+    src: url("fonts/icomoon.eot?i4fz1z");
+    src: url("fonts/icomoon.eot?i4fz1z#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?i4fz1z") format("truetype"), url("fonts/icomoon.woff?i4fz1z") format("woff"), url("fonts/icomoon.svg?i4fz1z#icomoon") format("svg");
     font-weight: normal;
     font-style: normal;
-    font-size: 24px;
-    line-height: 1;
-    letter-spacing: normal;
+}
+
+.icon {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: "icomoon" !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
     text-transform: none;
-    display: inline-block;
-    white-space: nowrap;
-    word-wrap: normal;
-    direction: ltr;
-    -webkit-font-feature-settings: "liga";
+    line-height: 1;
+    /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 * {
@@ -487,18 +486,21 @@ html {
     display: block;
     height: 24px;
     width: 24px;
+    color: #8bc34a;
+    font-family: "icomoon";
+    font-size: 24px;
 }
 .contact--address {
     width: 100%;
 }
 .contact--address::before {
-    background-image: url("../img/icons/ic_place_24px.svg");
+    content: "";
 }
 .contact--schedule {
     width: 49%;
 }
 .contact--schedule::before {
-    background-image: url("../img/icons/ic_schedule_24px.svg");
+    content: "";
 }
 .contact--phone {
     width: 49%;
@@ -508,7 +510,7 @@ html {
     line-height: 20px;
 }
 .contact--phone::before {
-    background-image: url("../img/icons/ic_phone_24px.svg");
+    content: "";
 }
 .contact__main {
     color: #3b3b3b;
@@ -519,6 +521,15 @@ html {
     color: #3b3b3b;
     font-size: 12px;
     font-weight: 400;
+}
+.contact--footer::before {
+    color: #ffffff;
+}
+.contact--footer .contact__main {
+    color: #ffffff;
+}
+.contact--footer .contact__additional {
+    color: #ffffff;
 }
 
 .social-contact {
@@ -539,18 +550,27 @@ html {
     display: block;
     height: 24px;
     width: 24px;
+    color: #8bc34a;
+    font-family: "icomoon";
+    font-size: 20px;
     background-repeat: no-repeat;
     background-size: 100%;
 }
 .social-contact--vk::before {
+    content: "";
     top: 20px;
-    left: 0;
-    background-image: url("../img/icons/ic_vk.svg");
+    left: 2px;
 }
 .social-contact--instagram::before {
-    top: 15px;
-    left: 0;
-    background-image: url("../img/icons/ic_instagram.svg");
+    content: "";
+    top: 20px;
+    left: 2px;
+}
+.social-contact--footer {
+    color: #ffffff;
+}
+.social-contact--footer::before {
+    color: #ffffff;
 }
 
 .main-nav {
@@ -658,6 +678,7 @@ html {
 }
 .section__container {
     padding: 20px 0;
+    text-align: center;
     background-color: #eeeeee;
 }
 
@@ -675,6 +696,7 @@ html {
     vertical-align: top;
     width: 118px;
     height: 100%;
+    text-align: left;
     z-index: 1;
 }
 .item__brand {
@@ -803,6 +825,7 @@ html {
 
 .news-item {
     margin-bottom: 20px;
+    text-align: left;
     background-color: #ffffff;
     box-shadow: 0 1px 7px .14px rgba(0, 0, 0, .12), 0 3px 4.7px .3px rgba(0, 0, 0, .24);
 }
@@ -825,4 +848,76 @@ html {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
+}
+
+.review {
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    background-color: #ffffff;
+    box-shadow: 0 1px 7px .14px rgba(0, 0, 0, .12), 0 3px 4.7px .3px rgba(0, 0, 0, .24);
+}
+.review__image-container {
+    height: 48px;
+    width: 48px;
+    float: left;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.review__image {
+    width: 100%;
+}
+.review__caption {
+    padding: 10px;
+    padding-left: 60px;
+    padding-bottom: 30px;
+    color: #3b3b3b;
+    font-size: 20px;
+    font-weight: 400;
+}
+.review__text {
+    color: #9a9a9a;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.rating {
+    position: relative;
+    display: block;
+    width: 120px;
+    height: 24px;
+    margin: 0 auto;
+}
+.rating__front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/icons/star.svg");
+}
+.rating__back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/icons/star_outline.svg");
+}
+
+.button {
+    display: inline-block;
+    border: none;
+    padding: 0 40px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #8bc34a;
+    border-radius: 2px;
+    box-shadow: 0 3px 4.7px .3px rgba(0, 0, 0, .24);
+}
+
+.main-footer {
+    padding: 20px 0;
+    background-color: #8bc34a;
 }

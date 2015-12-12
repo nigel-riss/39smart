@@ -1,0 +1,49 @@
+.review {
+    // box model
+    padding: 20px;
+    margin-bottom: 20px;
+
+    // typography
+    text-align: left;
+
+    // visual
+    background-color: $whiteBack;
+    @include itemShadow;
+
+    &__image-container {
+        // box model
+        height: 48px;
+        width: 48px;
+        float: left;
+        // border: 1px solid red;
+
+        // visual
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    &__image {
+        // box model
+        width: 100%;
+    }
+
+    &__caption {
+        // box model
+        padding: 10px;
+        padding-left: 60px;
+        padding-bottom: 30px;
+
+        // typography
+        color: $grey87;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    &__text {
+        // typography
+        color: $grey54;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+}

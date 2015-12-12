@@ -8,7 +8,6 @@
     position: relative;
 
     // box model
-    // display: block;
     display: inline-block;
     vertical-align: top;
     padding-left: 30px;
@@ -27,11 +26,11 @@
         display: block;
         height: 24px;
         width: 24px;
-        // border: 1px solid red;
 
         // typography
-        // font-family: "Material Icons";
-        // font-size: 24px;
+        color: $mainColor;
+        font-family: "icomoon";
+        font-size: 24px;
     }
 
     &--address {
@@ -39,8 +38,7 @@
         width: 100%;
 
         &::before {
-            // visual
-            background-image: url("../img/icons/ic_place_24px.svg");
+            content: $icon-place;
         }
     }
 
@@ -49,8 +47,7 @@
         width: 49%;
 
         &::before {
-            // visual
-            background-image: url("../img/icons/ic_schedule_24px.svg");
+            content: $icon-schedule;
         }
     }
 
@@ -65,8 +62,7 @@
         }
 
         &::before {
-            // visual
-            background-image: url("../img/icons/ic_phone_24px.svg");
+            content: $icon-call;
         }
     }
 
@@ -82,6 +78,23 @@
         color: $grey87;
         font-size: 12px;
         font-weight: 400;
+    }
+
+    &--footer {
+        &::before {
+            // typography
+            color: #ffffff;
+        }
+
+        & .contact__main {
+            // typography
+            color: #ffffff;
+        }
+
+        & .contact__additional {
+            // typography
+            color: #ffffff;
+        }
     }
 }
 
@@ -116,35 +129,41 @@
         display: block;
         height: 24px;
         width: 24px;
-        // border: 1px solid red;
 
         // typography
-        // font-family: "Material Icons";
-        // font-size: 24px;
-        // visual
+        color: $mainColor;
+        font-family: "icomoon";
+        font-size: 20px;
         background-repeat: no-repeat;
         background-size: 100%;
     }
 
     &--vk {
         &::before {
+            content: $icon-vk;
+
             // positioning
             top: 20px;
-            left: 0;
-
-            // visual
-            background-image: url("../img/icons/ic_vk.svg");
+            left: 2px;
         }
     }
 
     &--instagram {
         &::before {
-            // positioning
-            top: 15px;
-            left: 0;
+            content: $icon-instagram;
 
-            // visual
-            background-image: url("../img/icons/ic_instagram.svg");
+            // positioning
+            top: 20px;
+            left: 2px;
+        }
+    }
+
+    &--footer {
+        color: #ffffff;
+
+        &::before {
+            // typography
+            color: #ffffff;
         }
     }
 }

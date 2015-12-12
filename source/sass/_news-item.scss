@@ -2,6 +2,9 @@
     // box model
     margin-bottom: 20px;
 
+    // typography
+    text-align: left;
+
     // visual
     background-color: $whiteBack;
     @include itemShadow;
