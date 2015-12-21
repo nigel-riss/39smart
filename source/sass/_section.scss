@@ -2,8 +2,16 @@
     // positioning
     position: relative;
 
+    // typography
+    text-align: center;
+
     // box model
     padding-top: 20px;
+    margin-bottom: 40px;
+
+    @media (min-width: $tablet) {
+        margin-bottom: 100px;
+    }
 
     &::before {
         content: "";
@@ -19,8 +27,6 @@
 
         // visual
         background-color: $greyBack;
-        // background-color: red;
-        // border: 1px solid red;
     }
 
     &__info {
@@ -28,8 +34,12 @@
         position: relative;
 
         // box model
-        margin: 0 30px;
+        margin: 0 auto;
         padding-bottom: 20px;
+        width: 280px;
+        @media (min-width: $tablet) {
+            width: 360px;
+        }
 
         // visual
         background-color: $whiteBack;
@@ -49,6 +59,9 @@
         // font-size: 24px;
         font-weight: 400;
         text-align: center;
+        @media (min-width: $tablet) {
+            font-size: 24px;
+        }
     }
 
     &__description {
@@ -62,16 +75,42 @@
         // font-size: 16px;
         font-weight: 400;
         text-align: center;
+        @media (min-width: $tablet) {
+            font-size: 16px;
+        }
     }
 
     &__container {
         // box model
-        padding: 20px 0;
+        padding: 0;
+        @media (min-width: $tablet) {
+            padding: 20px 40px;
+        }
 
         // typography
         text-align: center;
 
         // visual
-        background-color: $greyBack;
+        background-color: $whiteBack;
+        @media (min-width: $tablet) {
+            background-color: $greyBack;
+        }
+    }
+
+    &__navigator {
+        // positioning
+        position: relative;
+
+        // box model
+        display: none;
+        margin: 0 auto;
+        width: 300px;
+        @media (min-width: $tablet) {
+            display: block;
+            width: 740px;
+        }
+        @media (min-width: $desktop) {
+            width: 1050px;
+        }
     }
 }

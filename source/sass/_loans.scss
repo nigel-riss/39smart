@@ -1,0 +1,35 @@
+.loans {
+    //
+
+    // typography
+    text-align: center;
+
+    &__header {
+        // box model
+        display: block;
+
+        // typography
+        color: $mainColor;
+        font-size: 24px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    &__image-container {
+        // box model
+        display: inline-block;
+        vertical-align: top;
+        width: 145px;
+        padding: 20px 10px;
+        // border: 1px solid red;
+        @media (min-width: $tablet) {
+            width: 185px;
+        }
+
+        // typography
+        text-align: left;
+        @media (min-width: $tablet) {
+            text-align: center;
+        }
+    }
+}

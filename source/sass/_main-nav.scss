@@ -1,19 +1,49 @@
 .main-nav {
     // box model
-    // margin-top: 20px;
-    padding: 20px 0;
+    // display: none;
+    padding-bottom: 20px;
+    // border: 1px solid red;
+    @media (min-width: $tablet) {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    // typography
+    font-size: 0;
 
     // visual
-    // background-color: $mainColor;
+    @media (min-width: $tablet) {
+        background-color: $mainColor;
+        box-shadow: 0 -4px 0 0 #ffffff,
+        0 1px 7px .14px rgba(0,0,0,.12),
+        0 3px 4.7px .3px rgba(0, 0, 0, .24);
+    }
 
     &__list {
         // box model
+        display: none;
         padding: 0;
         margin: 0;
         // border: 1px solid red;
+        @media (min-width: $tablet) {
+            // border: 1px solid red;;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        // typography
+        font-size: 0;
 
         // visual
         list-style: none;
+        // @media (min-width: $tablet) {
+        //     background-color: $mainColor;
+        // }
+
+        &--shown {
+            // box model
+            display: block;
+        }
     }
 
     &__item {
@@ -21,17 +51,31 @@
         display: block;
         margin-bottom: 2px;
         padding: 0 20px;
-        // border: 1px solid red;
+        @media (min-width: $tablet) {
+            display: inline-block;
+            padding: 10px 5px;
+            margin-bottom: 0;
+        }
 
         // visual
         background-color: $mainColor;
         // background-color: $whiteBack;
         border-radius: 2px;
+
+        &--current {
+            // box model
+            @media (min-width: $tablet) {
+                border-bottom: 2px solid $whiteBack;
+            }
+        }
     }
 
     &__link {
         // box model
         display: block;
+        @media (min-width: $tablet) {
+            padding: 0 10px;
+        }
 
         // typography
         color: #ffffff;
@@ -40,5 +84,21 @@
         line-height: 50px;
         text-decoration: none;
         text-transform: uppercase;
+        @media (min-width: $tablet) {
+            font-size: 15px;
+            line-height: 36px;
+        }
+        @media (min-width: $desktop) {
+            font-size: 14px;
+        }
+
+        &:hover {
+            // typography
+            color: $mainColor;
+
+            // visual
+            background-color: $whiteBack;
+            border-radius: 2px;
+        }
     }
 }

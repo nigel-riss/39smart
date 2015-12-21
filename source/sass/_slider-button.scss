@@ -1,0 +1,42 @@
+.slider-button {
+    // positioning
+    position: absolute;
+    top: 260px;
+    @media (min-width: $tablet) {
+        top: 175px;
+    }
+
+    // box model
+    display: inline-block;
+    // height: 24px;
+    // width: 24px;
+    // border: 1px solid red;
+
+    // typography
+    color: $mainColor;
+    font-family: "icomoon";
+    font-size: 24px;
+
+    // visual
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 9;
+
+    &:hover {
+        // typography
+        color: $whiteBack;
+
+        // visual
+        background-color: $mainColor;
+    }
+
+    &--prev {
+        // positioning
+        left: 5px;
+    }
+
+    &--next {
+        // positioning
+        right: 5px;
+    }
+}

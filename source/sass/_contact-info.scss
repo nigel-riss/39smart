@@ -1,6 +1,24 @@
 .contact-info {
-    //
+    // box model
     // border: 1px solid red;
+    display: none;
+    @media (min-width: $tablet) {
+        display: block;
+    }
+    @media (min-width: $desktop) {
+        display: inline-block;
+        padding-left: 25px;
+    }
+
+    // typography
+    font-size: 0;
+    @media (min-width: $desktop) {
+        text-align: right;
+    }
+
+    &--footer {
+        display: block;
+    }
 }
 
 .contact {
@@ -13,6 +31,14 @@
     padding-left: 30px;
     padding-right: 10px;
     padding-top: 20px;
+    @media (min-width: $tablet) {
+        // padding-top: 10px;
+        padding-right: 30px;
+    }
+    @media (min-width: $desktop) {
+        padding-top: 5px;
+        text-align: left;
+    }
 
     &::before {
         content: "";
@@ -36,6 +62,9 @@
     &--address {
         // box model
         width: 100%;
+        @media (min-width: $tablet) {
+            width: auto;
+        }
 
         &::before {
             content: $icon-place;
@@ -44,7 +73,10 @@
 
     &--schedule {
         // box model
-        width: 49%;
+        width: 49.9%;
+        @media (min-width: $tablet) {
+            width: auto;
+        }
 
         &::before {
             content: $icon-schedule;
@@ -53,7 +85,10 @@
 
     &--phone {
         // box model
-        width: 49%;
+        width: 49.9%;
+        @media (min-width: $tablet) {
+            width: auto;
+        }
 
         .contact__main {
             // typography
@@ -99,7 +134,17 @@
 }
 
 .social-contacts {
-    //
+    // box model
+    // display: none;
+    @media (min-width: $tablet) {
+        display: inline-block;
+        // border: 1px solid red;
+        padding-top: 10px;
+        padding-bottom: 2px;
+    }
+    @media (min-width: $desktop) {
+        padding-top: 5px;
+    }
 }
 
 .social-contact {
@@ -113,6 +158,13 @@
     padding-right: 10px;
     padding-top: 20px;
     width: 49%;
+    @media (min-width: $tablet) {
+        display: block;
+        padding-top: 10px;
+    }
+    @media (min-width: $desktop) {
+        padding-right: 0;
+    }
 
     // typography
     color: $grey87;
@@ -124,6 +176,11 @@
 
         // positioning
         position: absolute;
+        top: 20px;
+        left: 2px;
+        @media (min-width: $tablet) {
+            top: 10px;
+        }
 
         // box model
         display: block;
@@ -139,22 +196,22 @@
     }
 
     &--vk {
+        // box model
+        @media (min-width: $desktop) {
+            padding-top: 0;
+        }
+
         &::before {
             content: $icon-vk;
-
-            // positioning
-            top: 20px;
-            left: 2px;
+            @media (min-width: $desktop) {
+                top: 0;
+            }
         }
     }
 
     &--instagram {
         &::before {
             content: $icon-instagram;
-
-            // positioning
-            top: 20px;
-            left: 2px;
         }
     }
 

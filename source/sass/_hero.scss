@@ -1,46 +1,23 @@
 .hero {
-    //
+    // box model
+    // height: 340px;
 }
 
 .hero-ads {
-    //
-}
+    // typography
+    font-size: 0;
 
-.small-block {
+    // .container {
     // box model
-    height: 160px;
-    margin-bottom: 20px;
-
-    // visual 
-    background-color: $mainColor;
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    border-radius: 2px;
-
-    &--1 {
-        // visual
-        background-image: url("../img/small-block-1.png");
-    }
-
-    &--2 {
-        // visual
-        background-image: url("../img/small-block-2.png");
-    }
-
-    &--3 {
-        // visual
-        background-image: url("../img/small-block-3.png");
-    }
-
-    &__text {
-        // box model
-        padding: 20px;
+    @media (min-width: $tablet) {
+        display: flex;
         // border: 1px solid red;
-        width: 200px;
+        justify-content: space-between;
+    }
+    // }
 
-        // typography
-        color: #ffffff;
-        font-size: 16px;
-        font-weight: 400;
+    // typography
+    @media (min-width: $tablet) {
+        text-align: center;
     }
 }

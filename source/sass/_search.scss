@@ -1,9 +1,15 @@
 .search {
     &__form {
         // box model
-        margin-top: 20px;
-        //
+        margin-top: 10px;
         // border: 1px solid red;
+        @media (min-width: $tablet) {
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: 0;
+            padding-left: 20px;
+            width: 295px;
+        }
 
         // visual
         // background-color: $mainColor;
@@ -17,6 +23,11 @@
         border: none;
         border: 1px solid #cccccc;
         padding: 0 20px;
+        // @media (min-width: $tablet) {
+        //     display: inline-block;
+        //     width: 180px;
+        //     border: 1px solid red;
+        // }
 
         // typography
         font-size: 14px;
@@ -25,5 +36,11 @@
 
         // visual
         border-radius: 20px;
+
+        &:focus {
+            // display: none;
+            outline: none;
+            border-color: $mainColor;
+        }
     }
 }

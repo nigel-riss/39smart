@@ -1,6 +1,11 @@
 .news-item {
     // box model
     margin-bottom: 20px;
+    @media (min-width: $tablet) {
+        display: inline-block;
+        vertical-align: top;
+        width: 300px;
+    }
 
     // typography
     text-align: left;
@@ -33,6 +38,9 @@
     &__text {
         // box model
         padding: 30px 20px;
+        @media (min-width: $tablet) {
+            height: 300px;
+        }
 
         // typography
         color: $grey54;

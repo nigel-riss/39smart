@@ -1,0 +1,13 @@
+.menu-button {
+    // positioning
+    position: absolute;
+    right: 10px;
+    top: 15px;
+
+    // visual
+    cursor: pointer;
+
+    @media (min-width: $tablet) {
+        display: none;
+    }
+}

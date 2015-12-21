@@ -10,6 +10,10 @@
     // visual
     background-image: url("../img/write-us.jpg");
     background-position: center center;
+    @media (min-width: $desktop) {
+        background-size: 100%;
+        background-position: center bottom;
+    }
 
     &__caption {
         // box model
@@ -26,13 +30,18 @@
 
     &__email {
         // box model
-        display: inline-block;
+        display: block;
+        margin: 0 auto;
         height: 40px;
-        width: 100%;
+        width: 300px;
+        max-width: 380px;
         border: none;
         border: 1px solid #cccccc;
         padding: 0 20px;
         margin-bottom: 20px;
+        @media (min-width: $tablet) {
+            width: 380px;
+        }
 
         // typography
         font-size: 14px;
@@ -41,6 +50,12 @@
 
         // visual
         border-radius: 20px;
+
+        &:focus {
+            border: none;
+            // visual
+            border-radius: 20px;
+        }
     }
 
     &__submit {

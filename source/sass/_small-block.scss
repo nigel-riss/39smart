@@ -1,0 +1,57 @@
+.small-block {
+    // positioning
+    position: relative;
+
+    // box model
+    height: 160px;
+    margin-bottom: 20px;
+    @media (min-width: $tablet) {
+        display: inline-block;
+        vertical-align: top;
+        width: 242px;
+    }
+    @media (min-width: $desktop) {
+        width: 340px;
+    }
+
+    // visual 
+    background-color: $mainColor;
+    border-radius: 2px;
+
+    &__text {
+        // positioning
+        position: relative;
+        z-index: 2;
+
+        // box model
+        padding: 20px;
+        // border: 1px solid red;
+        width: 200px;
+
+        // typography
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+
+        & span {
+            // visual
+            background-color: rgba(139, 195, 74, .5);
+        }
+    }
+
+    &__image {
+        // positioning
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+
+        // box model
+        width: 100%;
+
+        // visual
+        opacity: 1;
+    }
+}

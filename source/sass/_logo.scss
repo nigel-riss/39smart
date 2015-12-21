@@ -1,21 +1,41 @@
 .logo {
+    // positioning
+    position: relative;
+
     // box model
     padding: 0;
     margin: 0;
+    // border: 1px solid red;
+    @media (min-width: $desktop) {
+        display: inline-block;
+        vertical-align: top;
+    }
 
     // typography
+    text-align: left;
     font-size: 0;
+    @media (min-width: $tablet) {
+        text-align: center;
+    }
 
     &__picture {
         // box model
         display: inline-block;
         vertical-align: middle;
+        // width: 40px;
+        // border: 1px solid red;
     }
 
     &__svg {
         // box model
-        width: 80px;
-        height: 63px;
+        // width: 40px;
+        // height: 31px;
+        width: 50px;
+        // border: 1px solid red;
+        @media (min-width: $tablet) {
+            width: 80px;
+            height: 63px;
+        }
     }
 
     &__caption {
@@ -28,8 +48,16 @@
 
         // typography
         color: $grey87;
-        font-size: 30px;
+        font-size: 22px;
         font-weight: 700;
         text-transform: uppercase;
+        @media (min-width: $tablet) {
+            font-size: 30px;
+        }
+
+        &--footer {
+            // typography
+            color: #ffffff;
+        }
     }
 }

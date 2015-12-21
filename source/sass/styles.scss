@@ -3,19 +3,22 @@
 @import "vars";
 @import "fonts";
 
-* {
-    // box model
-    box-sizing: border-box;
-}
 
 body {
     // box model
     padding: 0;
     margin: 0;
-    width: 320px;
-    // max-width: 768px;
+    min-width: 320px;
+    // max-width: 320px;
     margin: 0 auto;
-    border: 1px solid #cccccc;
+    // box-shadow: 0 1px 7px .14px rgba(0,0,0,.32);
+    // @media (min-width: $tablet) {
+    //     max-width: 768px;
+    // }
+    // @media (min-width: $desktop) {
+    //     max-width: 1060px;
+    // }
+
 
     // typography
     font-family: $mainFont;
@@ -30,16 +33,32 @@ html {
 }
 
 .container {
+    // positioning
+    position: relative;
+
     // box model
-    padding: 0 10px;
+    padding: 0 5px;
+    margin: 0 auto;
+    max-width: 320px;
+    @media (min-width: $tablet) {
+        max-width: 768px;
+        // border: 1px solid red;
+    }
+    @media (min-width: $desktop) {
+        padding: 0;
+        max-width: 1060px;
+    }
 }
 
 @import "main-header";
 @import "logo";
+@import "menu-button";
 @import "contact-info";
 @import "main-nav";
 @import "search";
 @import "hero";
+@import "hero-slider";
+@import "small-block";
 @import "section";
 @import "item";
 @import "write-us";
@@ -47,5 +66,13 @@ html {
 @import "review";
 @import "rating";
 @import "button";
+@import "loans";
 
 @import "main-footer";
+
+@import "slider-button";
+
+* {
+    // box model
+    box-sizing: border-box;
+}
