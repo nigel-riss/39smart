@@ -23,7 +23,8 @@
 	display: none;
 	position: relative;
 	-webkit-transform: translate3d(0px, 0px, 0px);
-	padding: 5px 0;
+	/*padding: 5px 0;*/
+	padding: 0;
 }
 .owl-carousel .owl-wrapper-outer{
 	overflow: hidden;

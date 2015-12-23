@@ -9,7 +9,9 @@
 
     // .container {
     // box model
+    padding-top: 30px;
     @media (min-width: $tablet) {
+        padding-top: 0;
         display: flex;
         // border: 1px solid red;
         justify-content: space-between;

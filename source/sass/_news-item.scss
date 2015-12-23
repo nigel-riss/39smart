@@ -1,10 +1,12 @@
 .news-item {
     // box model
+    margin-top: 5px;
     margin-bottom: 20px;
-    @media (min-width: $tablet) {
+    @media (min-width: $desktop) {
         display: inline-block;
         vertical-align: top;
         width: 300px;
+        margin: 0 10px;
     }
 
     // typography
@@ -38,7 +40,7 @@
     &__text {
         // box model
         padding: 30px 20px;
-        @media (min-width: $tablet) {
+        @media (min-width: $desktop) {
             height: 300px;
         }
 

@@ -1,0 +1,72 @@
+.sort {
+    //
+
+    &__list {
+        // box model
+        padding: 0;
+        margin: 0;
+        border-bottom: 1px solid #d1d1d1;
+
+        // visual
+        list-style: none;
+    }
+
+    &__item {
+        // box model
+        padding: 5px 0;
+    }
+
+    &__link {
+        // box model
+        display: block;
+        padding: 0 20px;
+        vertical-align: middle;
+        // border: 1px solid red;;
+
+        // typography
+        color: $grey87;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 36px;
+        text-align: left;
+        text-decoration: none;
+
+        &--selected {
+            // typography
+            color: $mainColor;
+
+            // visual
+            background-color: #dddddd;
+        }
+
+        &:hover {
+            // typography
+            color: #ffffff;
+
+            // visual
+            background-color: $mainColor;
+        }
+
+        &--down::after {
+            content: $icon-arrow_drop_down;
+
+            // box model
+            vertical-align: middle;
+
+            // typography
+            font-family: "icomoon";
+            font-size: 24px;
+        }
+
+        &--up::after {
+            content: $icon-arrow_drop_up;
+
+            // box model
+            vertical-align: middle;
+
+            // typography
+            font-family: "icomoon";
+            font-size: 24px;
+        }
+    }
+}

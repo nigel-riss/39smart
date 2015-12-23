@@ -36,12 +36,6 @@ $(document).ready(function() {
             itemsTablet: [737, 1],
             itemsMobile: false,
             responsiveBaseWidth: ".container",
-            // autoHeight : true
-            // ,
-            // navigation: true
-            // responsive: false
-            // ,
-            // itemsCustom: [[320, 1], [768, 2], [1000, 3]]
         });
 
         $(".section__container--sale-items").owlCarousel({
@@ -51,14 +45,14 @@ $(document).ready(function() {
             itemsTablet: [737, 1],
             itemsMobile: false,
             responsiveBaseWidth: ".container",
-            // autoHeight : true
-            // ,
-            // navigation: true
-            // responsive: false
-            // ,
-            // itemsCustom: [[320, 1], [768, 2], [1000, 3]]
         });
     }
+
+    $(".hero-slider__container").owlCarousel({
+        singleItem:true
+        ,
+        autoPlay: true
+    });
 
     ///////////////
     // MAIN MENU
@@ -75,5 +69,4 @@ $(document).ready(function() {
             mainMenuList.classList.add("main-nav__list--shown");
         }
     });
-
 });

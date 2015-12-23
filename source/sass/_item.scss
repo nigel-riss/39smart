@@ -2,14 +2,14 @@
     // box model
     height: 180px;
     padding: 20px;
-    margin: 0 5px;
+    margin: 5px;
     margin-bottom: 20px;
     @media (min-width: $tablet) {
-        margin: 0 15px;
+        margin: 5px 15px;
     }
     @media (min-width: $desktop) {
         width: 300px;
-        margin: 0 5px;
+        margin: 5px;
     }
 
     // typography

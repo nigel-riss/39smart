@@ -95,6 +95,31 @@
         @media (min-width: $tablet) {
             background-color: $greyBack;
         }
+
+        &--news {
+            @media (min-width: $desktop) {
+                // display: flex;
+                // justify-content: space-between;
+            }
+        }
+
+        &--catalog {
+            // box model
+            @media (min-width: $tablet) {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+
+            // visual
+            background-color: $greyBack;
+
+            & .item {
+                @media (min-width: $tablet) {
+                    margin: 20px 0;
+                }
+            }
+        }
     }
 
     &__navigator {
@@ -111,6 +136,15 @@
         }
         @media (min-width: $desktop) {
             width: 1050px;
+        }
+    }
+
+    &--catalog {
+        // visual
+        background-color: $greyBack;
+
+        & .section__info {
+            background-color: transparent;
         }
     }
 }

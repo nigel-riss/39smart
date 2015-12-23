@@ -1,0 +1,56 @@
+.category {
+    //
+    &__list {
+        // box model
+        // border: 1px solid red;
+        // border-top: 1px solid #d1d1d1;
+        border-bottom: 1px solid #d1d1d1;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 10px;
+
+        // visual
+        list-style: none;
+    }
+
+    &__item {
+        // box model
+        padding: 5px 0;
+        // display: inline-block;
+        // border: 1px solid red;
+    }
+
+    &__link {
+        // box model
+        display: block;
+        padding: 0 20px;
+        // border: 1px solid red;;
+
+        // typography
+        color: $grey87;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 36px;
+        text-align: left;
+        text-decoration: none;
+
+        // visual
+        border-radius: 2px;
+
+        &--selected {
+            // typography
+            color: $mainColor;
+
+            // visual
+            background-color: #dddddd;
+        }
+
+        &:hover {
+            // typography
+            color: #ffffff;
+
+            // visual
+            background-color: $mainColor;
+        }
+    }
+}

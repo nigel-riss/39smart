@@ -18,12 +18,16 @@
 
     &--footer {
         display: block;
+        @media (min-width: $desktop) {
+            display: inline-block;
+        }
     }
 }
 
 .contact {
     // positioning
     position: relative;
+    // border: 1px solid red;
 
     // box model
     display: inline-block;
@@ -47,6 +51,9 @@
         position: absolute;
         top: 20px;
         left: 0;
+        @media (min-width: $desktop) {
+            top: 5px;
+        }
 
         // box model
         display: block;

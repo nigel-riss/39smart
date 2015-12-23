@@ -58,6 +58,7 @@ html {
 @import "search";
 @import "hero";
 @import "hero-slider";
+@import "slide";
 @import "small-block";
 @import "section";
 @import "item";
@@ -71,6 +72,12 @@ html {
 @import "main-footer";
 
 @import "slider-button";
+
+@import "catalog-filter";
+@import "category";
+@import "sort";
+@import "price-filter";
+@import "paginator";
 
 * {
     // box model

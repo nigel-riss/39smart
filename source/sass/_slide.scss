@@ -1,0 +1,97 @@
+.slide {
+    // box model
+    padding: 20px 0;
+    // border: 1px solid red;
+    height: 340px;
+    margin-bottom: 20px;
+    @media (min-width: $tablet) {
+        padding: 0;
+    }
+
+    // typography
+    text-align: center;
+    @media (min-width: $desktop) {
+        text-align: left;
+    }
+
+    &__image {
+        // box model
+        width: 100%;
+        @media (min-width: $tablet) {
+            height: 170px;
+            width: auto;
+        }
+        @media (min-width: $desktop) {
+            height: 340px;
+            float: left;
+        }
+    }
+
+    &__caption {
+        // box model
+        // padding-left: 20px;
+        padding-top: 10px;
+        @media (min-width: $desktop) {
+            padding-top: 45px;
+            text-align: left;
+        }
+
+        // typography
+        color: $grey87;
+        font-size: 20px;
+        font-weight: 400;
+        @media (min-width: $desktop) {
+            font-size: 24px;
+        }
+    }
+
+    &__sub-caption {
+        // box model
+        // padding-left: 20px;
+        padding-bottom: 40px;
+        @media (min-width: $desktop) {
+            padding-bottom: 30px;
+        }
+
+        // typography
+        color: $grey54;
+        font-size: 14px;
+        font-weight: 400;
+        @media (min-width: $desktop) {
+            font-size: 16px;
+            text-align: left;
+        }
+    }
+
+    &__text {
+        // box model
+        display: none;
+        @media (min-width: $desktop) {
+            display: block;
+            padding-bottom: 20px;
+        }
+
+        // typography
+        color: $grey87;
+        font-size: 14px;
+        @media (min-width: $desktop) {
+            text-align: left;
+        };
+    }
+
+    &--black {
+        // visual
+        background-color: #000000;
+        // border: 1px solid red;
+
+        & .slide__caption {
+            // border: 1px solid red;
+            // color: rgba(255, 255, 255, .87);
+            color: #ffffff;
+        }
+
+        & .slide__text {
+            color: #ffffff;
+        }
+    }
+}

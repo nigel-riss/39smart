@@ -74,11 +74,11 @@
         <nav class="main-nav">
             <div class="container">
                 <ul class="main-nav__list">
-                    <li class="main-nav__item  main-nav__item--current">
-                        <a href="#" class="main-nav__link">Главная</a>
-                    </li>
                     <li class="main-nav__item">
-                        <a href="catalog.html" class="main-nav__link">Каталог</a>
+                        <a href="index.html" class="main-nav__link">Главная</a>
+                    </li>
+                    <li class="main-nav__item  main-nav__item--current">
+                        <a href="#" class="main-nav__link">Каталог</a>
                     </li>
                     <li class="main-nav__item">
                         <a href="#" class="main-nav__link">Обмен</a>
@@ -97,43 +97,255 @@
             </div>
         </nav>
         
+        
+        
         <div class="container">
-            <section class="hero">
-                <div class="hero-slider">
-                    <div class="hero-slider__container">
-                        <div class="slide  slide--transparent">
-                            <img class="slide__image" src="img/slide-1.png" alt="slide 1">
-                            <div class="slide__caption">Samsung Galaxy S6</div><!--  .slide__caption -->
-                            <div class="slide__sub-caption">Изысканный и инновационный дизайн</div><!--  .slide__sub-caption -->
-                            <p class="slide__text">Смартфон Samsung Galaxy S6 edge обладает элегантным дизайном благодаря гармоничному сочетанию стекла и металла. Это первый в мире смартфон с изогнутым с двух сторон экраном.</p><!--  .slide__text -->
-                            <div class="button">Уже в продаже</div><!--  .button -->
+            <section class="section  section--catalog">
+                <div class="section__info">
+                    <h2 class="section__caption">Каталог</h2><!--  .section__caption -->
+                </div><!--  .section__info -->
+
+                <div class="catalog-filter">
+                    <div class="catalog-filter__spoiler">
+                        Фильтры
+                        <svg class="catalog-filter__button" height="24px" viewBox="0 0 24 24" width="24px">
+                            <path d="M0.577138391,0 C0.258393659,0 0,0.221932411 0,0.5 C0,0.776142375 0.262396485,1 0.577138391,1 L21.4228616,1 C21.7416064,1 22,0.77806759 22,0.5 C22,0.223857625 21.7376035,0 21.4228616,0 L0.577138391,0 L0.577138391,0 Z M0.577138391,5 C0.258393659,5 0,5.2219324 0,5.5 C0,5.77614235 0.262396485,6 0.577138391,6 L21.4228616,6 C21.7416064,6 22,5.7780676 22,5.5 C22,5.22385765 21.7376035,5 21.4228616,5 L0.577138391,5 L0.577138391,5 Z M0.577138391,10 C0.258393659,10 0,10.2219324 0,10.5 C0,10.7761424 0.262396485,11 0.577138391,11 L21.4228616,11 C21.7416064,11 22,10.7780676 22,10.5 C22,10.2238576 21.7376035,10 21.4228616,10 L0.577138391,10 L0.577138391,10 Z" id="path-1" />
+                        </svg>
+                    </div><!--  .catalog-filter__button -->
+
+                    <div class="catalog-filter__container">
+                        <h3 class="catalog-filter__caption">Категория: </h3>
+                        <ul class="category__list">
+                            <li class="category__item">
+                                <a href="#" class="category__link  category__link--selected">Все</a>
+                            </li>
+                            <li class="category__item">
+                                <a href="#" class="category__link">Телефоны</a>
+                            </li>
+                            <li class="category__item">
+                                <a href="#" class="category__link">Аксессуары</a>
+                            </li>
+                            <li class="category__item">
+                                <a href="#" class="category__link">Планшеты</a>
+                            </li>
+                            <li class="category__item">
+                                <a href="#" class="category__link">Плееры</a>
+                            </li>
+                            <li class="category__item">
+                                <a href="#" class="category__link">Другое</a>
+                            </li>
+                        </ul><!--  .catalog-filter__category-list -->
+                        
+                        <label class="catalog-filter__label" for="brand-select">Бренды: </label>
+                        <select class="catalog-filter__brand-select" name="" id="brand-select">
+                            <option value="all">Все бренды</option>
+                            <option value="samsung">Samsung</option>
+                            <option value="sony">Sony</option>
+                            <option value="asus">Asus</option>
+                            <option value="huawei">Huawei</option>
+                            <option value="nokia">Nokia</option>
+                            <option value="lenovo">Lenovo</option>
+                        </select>
+                    </div><!--  .catalog-filter__container -->
+                    
+                    <div class="catalog-filter__container">
+                        <h3 class="catalog-filter__caption">Сортировать по: </h3>
+                        <ul class="sort__list">
+                            <li class="sort__item">
+                                <a href="#" class="sort__link  sort__link--selected  sort__link--up">цене</a>
+                            </li>
+                            <li class="sort__item">
+                                <a href="#" class="sort__link  sort__link--down">названию</a>
+                            </li>
+                            <li class="sort__item">
+                                <a href="#" class="sort__link  sort__link--down">популярности</a>
+                            </li>
+                            <li class="sort__item">
+                                <a href="#" class="sort__link  sort__link--down">дате</a>
+                            </li>
+                        </ul><!--  .sort__list -->
+
+                        <h3 class="catalog-filter__caption">Цена: </h3>
+                        <div class="price-filter">
+                            <div class="price-filter__scale">
+                                <div class="price-filter__bar" style="margin-left: 20%; width: 50%;"></div>
+                                <div class="price-filter__toggle  price-filter__toggle--min"></div>
+                                <div class="price-filter__toggle  price-filter__toggle--max"></div>
+                            </div><!--  .price-filter__bar -->
+                            <label class="price-filter__label" for="min-price">от</label>
+                            <input class="price-filter__input" type="text" id="min-price" value="1990">
+                            <label class="price-filter__label  price-filter__label--max-price" for="max-price">до</label>
+                            <input class="price-filter__input" type="text" id="max-price" value="34990">
+                        </div><!--  .price-filter -->
+                    </div><!--  .catalog-filter__container -->
+                </div><!--  .catalog-filter -->
+
+                <div class="section__container  section__container--catalog">
+                    <div class="item">
+                        <div class="item__info">
+                            <div class="item__brand">Asus</div>
+                            <div class="item__model">Zenfone 2</div>
+                            <div class="item__price">18 490 руб</div>
                         </div>
-                        <div class="slide  slide--black">
-                            <img class="slide__image" src="img/slide-2.png" alt="slide 2">
-                            <div class="slide__caption">Супергеройские чехлы</div><!--  .slide__caption -->
-                            <div class="slide__sub-caption">Изысканный и инновационный дизайн</div><!--  .slide__sub-caption -->
-                            <p class="slide__text">Смартфон Samsung Galaxy S6 edge обладает элегантным дизайном благодаря гармоничному сочетанию стекла и металла. Это первый в мире смартфон с изогнутым с двух сторон экраном.</p><!--  .slide__text -->
-                            <div class="button">Уже в продаже</div><!--  .button -->
+                        <div class="item__image-container">
+                            <img class="item__image" src="img/items/asus-zenfone.png" alt="">
                         </div>
-                        <div class="slide  slide--white"></div>
                     </div>
-                </div>
-                
-                <div class="hero-ads">
-                    <div class="small-block">
-                        <div class="small-block__text"><span>Эксклюзивные дизайнерские чехлы из дерева</span></div>
-                        <img class="small-block__image" src="img/small-block-1.png" alt="small block">
+
+                    <div class="item">
+                        <div class="item__info">
+                            <div class="item__brand">Samsung</div>
+                            <div class="item__model">Galaxy Note 4</div>
+                            <div class="item__price">27 490 руб</div>
+                        </div>
+                        <div class="item__image-container">
+                            <img class="item__image" src="img/items/galaxy-note-4.png" alt="">
+                        </div>
                     </div>
-                    <div class="small-block">
-                        <div class="small-block__text"><span>Защитный экран в подарок к любому приобретенному у нас смартфону</span></div>
-                        <img class="small-block__image" src="img/small-block-2.png" alt="small block">
+
+                    <div class="item">
+                        <div class="item__info">
+                            <div class="item__brand">Sony</div>
+                            <div class="item__model">Xperia T3</div>
+                            <div class="item__price">13 790 руб</div>
+                        </div>
+                        <div class="item__image-container">
+                            <img class="item__image" src="img/items/sony-t3.png" alt="">
+                        </div>
                     </div>
-                    <div class="small-block">
-                        <div class="small-block__text"><span>Последние новинки по лучшим ценам в городе</span></div>
-                        <img class="small-block__image" src="img/small-block-3.png" alt="small block">
+
+                    <!-- !!! -->
+
+                    <div class="item">
+                        <div class="item__info">
+                            <div class="item__brand">Samsung</div>
+                            <div class="item__model">J5 LTE</div>
+                            <div class="item__price">12 990 руб</div>
+                        </div>
+                        <div class="item__image-container">
+                            <img class="item__image" src="img/items/samsung-j5-lte.png" alt="">
+                        </div>
                     </div>
-                </div>
-            </section>
+
+                    <div class="item">
+                        <div class="item__info">
+                            <div class="item__brand">Sony</div>
+                            <div class="item__model">Xperia M4 Aqua</div>
+                            <div class="item__price">13 990 руб</div>
+                        </div>
+                        <div class="item__image-container">
+                            <img class="item__image" src="img/items/sony-xperia.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item__info">
+                            <div class="item__brand">Huawei</div>
+                            <div class="item__model">8P Lite</div>
+                            <div class="item__price">12 990 руб</div>
+                        </div>
+                        <div class="item__image-container">
+                            <img class="item__image" src="img/items/huawei-8p.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- !!! -->
+
+                    <div class="item">
+                        <div class="item__info">
+                            <div class="item__brand">Nokia</div>
+                            <div class="item__model">Lumia 1520</div>
+                            <div class="item__price">14 990 руб</div>
+                        </div>
+                        <div class="item__image-container">
+                            <img class="item__image" src="img/items/nokia-lumia.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item__info">
+                            <div class="item__brand">Lenovo</div>
+                            <div class="item__model">K900 32Gb</div>
+                            <div class="item__price">10 990 руб</div>
+                        </div>
+                        <div class="item__image-container">
+                            <img class="item__image" src="img/items/lenovo-k900.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item__info">
+                            <div class="item__brand">LG</div>
+                            <div class="item__model">Optimus 3D</div>
+                            <div class="item__price">12 990 руб</div>
+                        </div>
+                        <div class="item__image-container">
+                            <img class="item__image" src="img/items/lg-optimus.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- !!! -->
+
+                    <div class="item">
+                        <div class="item__info">
+                            <div class="item__brand">Huawei</div>
+                            <div class="item__model">8P Lite</div>
+                            <div class="item__price">12 990 руб</div>
+                        </div>
+                        <div class="item__image-container">
+                            <img class="item__image" src="img/items/huawei-8p.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item__info">
+                            <div class="item__brand">Asus</div>
+                            <div class="item__model">Zenfone 2</div>
+                            <div class="item__price">18 490 руб</div>
+                        </div>
+                        <div class="item__image-container">
+                            <img class="item__image" src="img/items/asus-zenfone.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item__info">
+                            <div class="item__brand">Sony</div>
+                            <div class="item__model">Xperia M4 Aqua</div>
+                            <div class="item__price">13 990 руб</div>
+                        </div>
+                        <div class="item__image-container">
+                            <img class="item__image" src="img/items/sony-xperia.png" alt="">
+                        </div>
+                    </div>
+                </div><!--  .section__container -->
+
+                <div class="paginator">
+                    <ul class="paginator__list">
+                        <li class="paginator__item">
+                            <a href="" class="paginator__link">назад</a>
+                        </li>
+                        <li class="paginator__item">
+                            <a href="" class="paginator__link  paginator__link--selected">1</a>
+                        </li>
+                        <li class="paginator__item">
+                            <a href="" class="paginator__link">2</a>
+                        </li>
+                        <li class="paginator__item">
+                            <a href="" class="paginator__link">3</a>
+                        </li>
+                        <li class="paginator__item">
+                            <a href="" class="paginator__link">4</a>
+                        </li>
+                        <li class="paginator__item">
+                            <a href="" class="paginator__link">5</a>
+                        </li>
+                        <li class="paginator__item">
+                            <a href="" class="paginator__link">вперед</a>
+                        </li>
+                    </ul><!--  .paginator__list -->
+                </div><!--  .paginator -->
+            </section><!--  .section -->
         </div><!--  .container -->
         
         
@@ -219,181 +431,7 @@
             </section>
         </div>
         
-        
-        
-        <section class="write-us">
-            <h2 class="write-us__caption">Подписаться на рассылку</h2>
-            <form class="write-us__form" action="">
-                <input type="text" class="write-us__email" placeholder="Ваш email">
-                <input type="submit" class="write-us__submit" value="Подписаться">
-            </form>
-        </section>
-        
-        
-        
-        <div class="container">
-            <section class="section">
-                <div class="section__info">
-                    <h2 class="section__caption">Наши новости и блог</h2>
-                    <p class="section__description">То, что мы хотим вам рассказать</p>
-                </div>
-                <div class="section__container  section__container--news">
-                    <div class="news-item">
-                        <div class="news-item__caption">Новые Samsung Galaxy S6</div>
-                        <div class="news-item__image-container">
-                            <img src="img/news-1.jpg" alt="" class="news-item__image">
-                        </div>
-                        <div class="news-item__text">Фронтальная и основная камеры Samsung Galaxy S6 edge обладают высоким разрешением и светосильным объективом F1.9 , позволяющим получать более яркие и четкие снимки. Дважды щелкните на центральную кнопку смартфона, чтобы активировать режим фотосъемки. </div>
-                    </div>
-                    
-                    <div class="news-item">
-                        <div class="news-item__caption">Режим быстрой зарядки</div>
-                        <div class="news-item__image-container">
-                            <img src="img/news-2.jpg" alt="" class="news-item__image">
-                        </div>
-                        <div class="news-item__text">Теперь Вы с легкостью можете забыть о проблеме, связанной с низким зарядом аккумулятора.Смартфон обладает режимом быстрой зарядки. Устройство заряжается в 1,5 раза быстрее по сравнению со своими предшественниками. Беспроводная зарядки позволяет заряжать смартфон, просто поместив его на </div>
-                    </div>
-                    
-                    <div class="news-item">
-                        <div class="news-item__caption">Производительность</div>
-                        <div class="news-item__image-container">
-                            <img src="img/news-3.jpg" alt="" class="news-item__image">
-                        </div>
-                        <div class="news-item__text">Благодаря быстрой работе смартфона и загрузке приложений, устройство не имеет себе равных по производительности  Первый в мире 64-битный 8-ядерный мобильный процессор, изготовленный по 14-нм технологии, обеспечивает производительность и энергоэффективность.</div>
-                    </div>
-                </div>
-                <div class="section__navigator"></div>
-            </section>
-        </div>
-        
-        
-        
-        <div class="container">
-            <section class="section">
-                <div class="section__navigator">
-                    <div class="slider-button  slider-button--prev">&#xe5c4;</div>
-                    <div class="slider-button  slider-button--next">&#xe5c8;</div>
-                </div>
-                
-                <div class="section__info">
-                    <h2 class="section__caption">Специальные предложения</h2>
-                    <p class="section__description">Скидки и акционные товары</p>
-                </div>
-                <div class="section__container  section__container--sale-items">
-                    <div class="item">
-                        <div class="item__info">
-                            <div class="item__brand">Samsung</div>
-                            <div class="item__model">J5 LTE</div>
-                            <div class="item__super-price-icon">sale</div>
-                            <div class="item__super-price">Супер цена!</div>
-                            <div class="item__price">12 990 руб</div>
-                        </div>
-                        <div class="item__image-container">
-                            <img class="item__image" src="img/items/samsung-j5-lte.png" alt="">
-                        </div>
-                    </div>
-                    
-                    <div class="item">
-                        <div class="item__info">
-                            <div class="item__brand">Sony</div>
-                            <div class="item__model">Xperia M4 Aqua </div>
-                            <div class="item__sale-icon">%</div>
-                            <div class="item__old-price">15 990 руб</div>
-                            <div class="item__price">13 990 руб</div>
-                        </div>
-                        <div class="item__image-container">
-                            <img class="item__image" src="img/items/sony-xperia.png" alt="">
-                        </div>
-                    </div>
-                    
-                    <div class="item">
-                        <div class="item__info">
-                            <div class="item__brand">Huawei</div>
-                            <div class="item__model">8P Lite</div>
-                            <div class="item__sale-icon">%</div>
-                            <div class="item__old-price">12 990 руб</div>
-                            <div class="item__price">9 990 руб</div>
-                        </div>
-                        <div class="item__image-container">
-                            <img class="item__image" src="img/items/huawei-8p.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="section__navigator"></div>
-            </section>
-        </div>
-        
-        
-        
-        <div class="container">
-            <section class="section">
-                <div class="section__info">
-                    <h2 class="section__caption">Отзывы наших клиентов</h2>
-                    <p class="section__description">Люди говорят о нас</p>
-                </div>
-                <div class="section__container">
-                    <div class="review">
-                        <div class="review__image-container">
-                            <img class="review__image" src="img/review-1.jpg" alt="">
-                        </div>
-                        <div class="review__caption">Мария Иванова</div>
-                        <div class="review__text">Смартфон одно загляденье! И оболочка MIUI совсем по другому воспринимается чем обычный android</div>
-                        <div class="rating">
-                            <div class="rating__front"></div>
-                            <div class="rating__back"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="review">
-                        <div class="review__image-container">
-                            <img class="review__image" src="img/review-2.jpg" alt="">
-                        </div>
-                        <div class="review__caption">Доктор Хаус</div>
-                        <div class="review__text">Понравился сайт, очень удобная навигация по нему, подробное описание с фотографиями на страницах с товарами.</div>
-                        <div class="rating">
-                            <div class="rating__front" style="width: 80%;"></div>
-                            <div class="rating__back"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="review">
-                        <div class="review__image-container">
-                            <img class="review__image" src="img/review-3.jpg" alt="">
-                        </div>
-                        <div class="review__caption">Василий Теркин</div>
-                        <div class="review__text">Все лгут!</div>
-                        <div class="rating">
-                            <div class="rating__front" style="width: 20%;"></div>
-                            <div class="rating__back"></div>
-                        </div>
-                    </div>
-                    <a class="button" href="#">Добавить отзыв</a>
-                </div>
-                <div class="section__navigator"></div>
-            </section>
-        </div>
-        
-        
-        
-        <div class="container">
-            <section class="loans">
-                <h2 class="loans__header">Доступен кредит:</h2>
-                <div class="loans__image-container">
-                    <img class="loans__image" src="img/loans/leto-bank.png" alt="leto bank">
-                </div>
-                <div class="loans__image-container">
-                    <img class="loans__image" src="img/loans/home-credit-bank.png" alt="home credit bank">
-                </div>
-                <div class="loans__image-container">
-                    <img class="loans__image" src="img/loans/alfa-bank.png" alt="alfa bank">
-                </div>
-                <div class="loans__image-container">
-                    <img class="loans__image" src="img/loans/russian-stand-bank.png" alt="russian standart bank">
-                </div>
-            </section>
-        </div>
-        
-        
+
         
         <section class="map">
             
@@ -449,5 +487,6 @@
         <script src="js/owl-carousel/owl.carousel.js"></script>
         
         <script src="js/scripts.js"></script>
+        <script src="js/catalog.js"></script>
     </body>
 </html>

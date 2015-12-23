@@ -1,6 +1,7 @@
 .logo {
     // positioning
     position: relative;
+    // border: 1px solid red;
 
     // box model
     padding: 0;
@@ -24,6 +25,10 @@
         vertical-align: middle;
         // width: 40px;
         // border: 1px solid red;
+        height: 42px;
+        @media (min-width: $tablet) {
+            height: 63px;
+        }
     }
 
     &__svg {
