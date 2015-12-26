@@ -48,6 +48,12 @@ html {
         padding: 0;
         max-width: 1060px;
     }
+
+    &::after {
+        content: "";
+        display: table;
+        width: 100%;
+    }
 }
 
 @import "main-header";
@@ -78,6 +84,9 @@ html {
 @import "sort";
 @import "price-filter";
 @import "paginator";
+
+@import "map";
+@import "photo";
 
 * {
     // box model

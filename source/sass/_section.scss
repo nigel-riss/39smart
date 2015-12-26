@@ -147,4 +147,37 @@
             background-color: transparent;
         }
     }
+
+    &__content {
+        // // box model
+        // padding: 20px;
+
+        // typography
+        font-size: 15px;
+        line-height: 1.5;
+        text-align: left;
+
+        // visual
+        // background-color: $greyBack;
+    }
+
+    &--about {
+        // box model
+        // width: 520px;
+        // float: left;
+        // border: 1px solid red;;
+
+        // visual
+        // background-color: $greyBack;
+    }
+
+    &--contacts {
+        // box model
+        // width: 520px;
+        // float: right;
+        // border: 1px solid red;;
+
+        // visual
+        // background-color: $greyBack;
+    }
 }

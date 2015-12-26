@@ -1,0 +1,18 @@
+.photo {
+    // box model
+    height: 300px;
+    margin-bottom: 40px;
+    @media (min-width: $desktop) {
+        height: 600px;
+    }
+
+    // visual
+    background-image: url("../img/photo.jpg");
+    background-position: center center;
+    background-size: 970px 300px;
+    background-repeat: no-repeat;
+    @media (min-width: $desktop) {
+        background-attachment: fixed;
+        background-size: 1920px 600px;
+    }
+}

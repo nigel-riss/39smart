@@ -10,6 +10,11 @@
             padding-left: 20px;
             width: 295px;
         }
+        @media (min-width: $desktop) {
+            width: 400px;
+            float: right;
+            margin-top: 10px;
+        }
 
         // visual
         // background-color: $mainColor;
