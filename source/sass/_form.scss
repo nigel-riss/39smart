@@ -1,0 +1,129 @@
+.form {
+    @media (min-width: $tablet) {
+        // box model
+        padding: 40px 0;
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    &__text-input {
+        // box model
+        border: none;
+        border-bottom: 2px solid #d1d1d1;
+        display: block;
+        margin-top: 20px;
+        width: 100%;
+        @media (min-width: $tablet) {
+            margin-top: 40px;
+        }
+
+        // typography
+        font-size: 16px;
+        font-weight: 400;
+
+        // visual
+        background-color: transparent;
+
+        &:focus {
+            // box model
+            border-bottom: 2px solid $mainColor;
+            // visual
+            outline: none;
+        }
+
+        &:hover {
+            // box model
+            border-bottom: 2px solid $mainColor;
+        }
+    }
+
+    &__checkbox {
+        display: none;
+
+        &:checked ~ .form__label::before {
+            // visual
+            background-color: $mainColor;
+            border-color: $mainColor;
+        }
+
+        &:checked ~ .form__label::after {
+            content: "";
+
+            // positioning
+            position: absolute;
+            left: 5px;
+            top: 5px;
+
+            // box model
+            display: block;
+            width: 10px;
+            height: 10px;
+
+            // visual
+            background-color: #ffffff;
+        }
+    }
+
+    &__label {
+        // positioning
+        position: relative;
+
+        // box model
+        display: block;
+        padding-left: 30px;
+        margin: 20px 0;
+        @media (min-width: $desktop) {
+            margin: 40px 0;
+        }
+
+        // typography
+        text-align: left;
+
+        &--checkbox {
+            //
+            &::before {
+                content: "";
+
+                // positioning
+                position: absolute;
+                left: 0;
+
+                // box model
+                display: block;
+                width: 18px;
+                height: 18px;
+                border: 2px solid #6d6d6d;
+
+                // visual
+                border-radius: 2px;
+            }
+
+            &:hover::before {
+                // visual
+                border-color: $mainColor;
+            }
+        }
+    }
+}
+
+.urgent__tooltip {
+    display: none;
+}
+
+.urgent__hover {
+    // box model
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+
+    // typography
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+
+    // visual
+    background-color: $mainColor;
+    border-radius: 50%;
+    cursor: pointer;
+}

@@ -1037,6 +1037,11 @@ html {
         width: 360px;
     }
 }
+@media (min-width: 768px) {
+    .section__info--repair {
+        width: 500px;
+    }
+}
 .section__caption {
     display: block;
     padding: 0;
@@ -1118,6 +1123,11 @@ html {
     background-color: transparent;
 }
 .section__content {
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: left;
+}
+.section__text {
     font-size: 15px;
     line-height: 1.5;
     text-align: left;
@@ -1691,6 +1701,98 @@ html {
         background-attachment: fixed;
         background-size: 1920px 600px;
     }
+}
+
+@media (min-width: 768px) {
+    .form {
+        padding: 40px 0;
+        width: 600px;
+        margin: 0 auto;
+    }
+}
+
+.form__text-input {
+    border: none;
+    border-bottom: 2px solid #d1d1d1;
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: transparent;
+}
+@media (min-width: 768px) {
+    .form__text-input {
+        margin-top: 40px;
+    }
+}
+.form__text-input:focus {
+    border-bottom: 2px solid #8bc34a;
+    outline: none;
+}
+.form__text-input:hover {
+    border-bottom: 2px solid #8bc34a;
+}
+
+.form__checkbox {
+    display: none;
+}
+.form__checkbox:checked ~ .form__label::before {
+    background-color: #8bc34a;
+    border-color: #8bc34a;
+}
+.form__checkbox:checked ~ .form__label::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+}
+
+.form__label {
+    position: relative;
+    display: block;
+    padding-left: 30px;
+    margin: 20px 0;
+    text-align: left;
+}
+@media (min-width: 1060px) {
+    .form__label {
+        margin: 40px 0;
+    }
+}
+.form__label--checkbox::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #6d6d6d;
+    border-radius: 2px;
+}
+.form__label--checkbox:hover::before {
+    border-color: #8bc34a;
+}
+
+.urgent__tooltip {
+    display: none;
+}
+
+.urgent__hover {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    background-color: #8bc34a;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 * {

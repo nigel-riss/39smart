@@ -44,6 +44,12 @@
         // visual
         background-color: $whiteBack;
         // background-color: red;
+
+        &--repair {
+            @media (min-width: $tablet) {
+                width: 500px;
+            }
+        }
     }
 
     &__caption {
@@ -159,6 +165,13 @@
 
         // visual
         // background-color: $greyBack;
+    }
+
+    &__text {
+        // typography
+        font-size: 15px;
+        line-height: 1.5;
+        text-align: left;
     }
 
     &--about {
