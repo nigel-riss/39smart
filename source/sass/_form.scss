@@ -41,26 +41,7 @@
         display: none;
 
         &:checked ~ .form__label::before {
-            // visual
-            background-color: $mainColor;
-            border-color: $mainColor;
-        }
-
-        &:checked ~ .form__label::after {
-            content: "";
-
-            // positioning
-            position: absolute;
-            left: 5px;
-            top: 5px;
-
-            // box model
-            display: block;
-            width: 10px;
-            height: 10px;
-
-            // visual
-            background-color: #ffffff;
+            content: $icon-check_box;
         }
     }
 
@@ -82,25 +63,22 @@
         &--checkbox {
             //
             &::before {
-                content: "";
+                content: $icon-check_box_outline_blank;
 
                 // positioning
                 position: absolute;
                 left: 0;
+                top: -2px;
 
-                // box model
-                display: block;
-                width: 18px;
-                height: 18px;
-                border: 2px solid #6d6d6d;
-
-                // visual
-                border-radius: 2px;
+                // typography
+                color: $grey87;
+                font-family: "icomoon";
+                font-size: 24px;
             }
 
             &:hover::before {
-                // visual
-                border-color: $mainColor;
+                // typography
+                color: $mainColor;
             }
         }
     }
@@ -123,7 +101,11 @@
     text-align: center;
 
     // visual
-    background-color: $mainColor;
+    background-color: $grey87;
     border-radius: 50%;
     cursor: pointer;
+
+    &:hover {
+        background-color: $mainColor;
+    }
 }

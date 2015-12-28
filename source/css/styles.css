@@ -399,8 +399,8 @@ th {
 
 @font-face {
     font-family: "icomoon";
-    src: url("fonts/icomoon.eot?i4fz1z");
-    src: url("fonts/icomoon.eot?i4fz1z#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?i4fz1z") format("truetype"), url("fonts/icomoon.woff?i4fz1z") format("woff"), url("fonts/icomoon.svg?i4fz1z#icomoon") format("svg");
+    src: url("fonts/icomoon.eot?sj99l7");
+    src: url("fonts/icomoon.eot?sj99l7#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?sj99l7") format("truetype"), url("fonts/icomoon.woff?sj99l7") format("woff"), url("fonts/icomoon.svg?sj99l7#icomoon") format("svg");
     font-weight: normal;
     font-style: normal;
 }
@@ -1738,18 +1738,7 @@ html {
     display: none;
 }
 .form__checkbox:checked ~ .form__label::before {
-    background-color: #8bc34a;
-    border-color: #8bc34a;
-}
-.form__checkbox:checked ~ .form__label::after {
-    content: "";
-    position: absolute;
-    left: 5px;
-    top: 5px;
-    display: block;
-    width: 10px;
-    height: 10px;
-    background-color: #ffffff;
+    content: "";
 }
 
 .form__label {
@@ -1765,17 +1754,16 @@ html {
     }
 }
 .form__label--checkbox::before {
-    content: "";
+    content: "";
     position: absolute;
     left: 0;
-    display: block;
-    width: 18px;
-    height: 18px;
-    border: 2px solid #6d6d6d;
-    border-radius: 2px;
+    top: -2px;
+    color: #3b3b3b;
+    font-family: "icomoon";
+    font-size: 24px;
 }
 .form__label--checkbox:hover::before {
-    border-color: #8bc34a;
+    color: #8bc34a;
 }
 
 .urgent__tooltip {
@@ -1790,9 +1778,43 @@ html {
     font-size: 14px;
     font-weight: 700;
     text-align: center;
-    background-color: #8bc34a;
+    background-color: #3b3b3b;
     border-radius: 50%;
     cursor: pointer;
+}
+.urgent__hover:hover {
+    background-color: #8bc34a;
+}
+
+.repair-hero {
+    height: 340px;
+    background-color: #eeeeee;
+}
+.repair-hero__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.repair-hero__item-icon {
+    font-family: "icomoon";
+}
+.repair-hero__item-icon--repair::before {
+    content: "";
+}
+.repair-hero__item-icon--warranty::before {
+    content: "";
+}
+.repair-hero__item-icon--details::before {
+    content: "";
+}
+.repair-hero__item-icon--programs::before {
+    content: "";
+}
+.repair-hero__item-icon--tune::before {
+    content: "";
+}
+.repair-hero__item-icon--urgent::before {
+    content: "";
 }
 
 * {

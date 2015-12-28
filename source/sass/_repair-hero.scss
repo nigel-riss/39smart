@@ -1,0 +1,45 @@
+.repair-hero {
+    // box model
+    height: 340px;
+
+    // visual
+    background-color: $greyBack;
+
+    &__list {
+        // box model
+        padding: 0;
+        margin: 0;
+
+        // visual
+        list-style: none;
+    }
+
+    &__item-icon {
+        // typography
+        font-family: "icomoon";
+
+        &--repair::before {
+            content: $icon-repair;
+        }
+
+        &--warranty::before {
+            content: $icon-warranty;
+        }
+
+        &--details::before {
+            content: $icon-details;
+        }
+
+        &--programs::before {
+            content: $icon-programs;
+        }
+
+        &--tune::before {
+            content: $icon-tune;
+        }
+
+        &--urgent::before {
+            content: $icon-urgent;
+        }
+    }
+}
