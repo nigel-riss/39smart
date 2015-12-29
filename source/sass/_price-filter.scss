@@ -1,16 +1,37 @@
 .price-filter {
+    // positioning
+    position: relative;
+
     // box model
     padding-top: 10px;
     padding-left: 20px;
+    @media (min-width: $tablet) {
+        padding-top: 0;
+        display: inline-block;
+    }
+    @media (min-width: $desktop) {
+        padding-left: 0;
+    }
 
     &__scale {
         // positioning
         position: relative;
+        @media (min-width: $tablet) {
+            position: absolute;
+            top: 18px;
+            left: 140px;
+        }
+        @media (min-width: $desktop) {
+            left: 120px;
+        }
 
         // box model
         height: 2px;
         width: 270px;
         margin-bottom: 30px;
+        @media (min-width: $desktop) {
+            width: 170px;
+        }
 
         // visual
         background-color: #aeaeae;
@@ -61,6 +82,12 @@
         &--max-price {
             // box model
             padding-left: 45px;
+            @media (min-width: $tablet) {
+                padding-left: 290px;
+            }
+            @media (min-width: $desktop) {
+                padding-left: 190px;
+            }
         }
     }
 

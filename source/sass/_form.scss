@@ -1,4 +1,6 @@
 .form {
+    padding-bottom: 40px;
+
     @media (min-width: $tablet) {
         // box model
         padding: 40px 0;
@@ -9,7 +11,8 @@
     &__text-input {
         // box model
         border: none;
-        border-bottom: 2px solid #d1d1d1;
+        border-bottom: 1px solid $grey54;
+        // border-bottom: 2px solid #d1d1d1;
         display: block;
         margin-top: 20px;
         width: 100%;
@@ -26,14 +29,18 @@
 
         &:focus {
             // box model
-            border-bottom: 2px solid $mainColor;
+            border-bottom: 1px solid $mainColor;
+
+            // typography
+            color: $mainColor;
+
             // visual
             outline: none;
         }
 
         &:hover {
             // box model
-            border-bottom: 2px solid $mainColor;
+            border-bottom: 1px solid $mainColor;
         }
     }
 
@@ -53,12 +60,20 @@
         display: block;
         padding-left: 30px;
         margin: 20px 0;
-        @media (min-width: $desktop) {
+        @media (min-width: $tablet) {
             margin: 40px 0;
         }
 
         // typography
         text-align: left;
+
+        // visual
+        cursor: pointer;
+
+        &:hover {
+            // typography
+            color: $mainColor;
+        }
 
         &--checkbox {
             //
@@ -81,6 +96,11 @@
                 color: $mainColor;
             }
         }
+    }
+
+    &__button-container {
+        // box model
+        margin-top: 40px;
     }
 }
 

@@ -104,8 +104,8 @@
 
         &--news {
             @media (min-width: $desktop) {
-                // display: flex;
-                // justify-content: space-between;
+                display: flex;
+                justify-content: space-between;
             }
         }
 
@@ -155,16 +155,10 @@
     }
 
     &__content {
-        // // box model
-        // padding: 20px;
-
         // typography
         font-size: 15px;
         line-height: 1.5;
         text-align: left;
-
-        // visual
-        // background-color: $greyBack;
     }
 
     &__text {
@@ -172,25 +166,25 @@
         font-size: 15px;
         line-height: 1.5;
         text-align: left;
+
+        & a {
+            color: $mainColor;
+
+            &:hover {
+                // typography
+                color: #ffffff;
+
+                // visual
+                background-color: $mainColor;
+            }
+        }
     }
 
     &--about {
-        // box model
-        // width: 520px;
-        // float: left;
-        // border: 1px solid red;;
-
-        // visual
-        // background-color: $greyBack;
+        //
     }
 
     &--contacts {
-        // box model
-        // width: 520px;
-        // float: right;
-        // border: 1px solid red;;
-
-        // visual
-        // background-color: $greyBack;
+        //
     }
 }

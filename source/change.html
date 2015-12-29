@@ -84,10 +84,10 @@
                 <li class="main-nav__item">
                     <a href="catalog.html" class="main-nav__link">Каталог</a>
                 </li>
-                <li class="main-nav__item">
+                <li class="main-nav__item  main-nav__item--current">
                     <a href="change.html" class="main-nav__link">Обмен</a>
                 </li>
-                <li class="main-nav__item  main-nav__item--current">
+                <li class="main-nav__item">
                     <a href="repair.html" class="main-nav__link">Ремонт</a>
                 </li>
                 <li class="main-nav__item">
@@ -101,32 +101,24 @@
         </div>
     </nav>
 
-        <section class="repair-hero">
-    <div class="container">
-            <h2 class="repair-hero__caption">СЕРВИСНЫЙ ЦЕНТР <span class="m-only"><br></span>«39 СМАРТФОНОВ»</h2>
-            <ul class="repair-hero__list">
-                <li class="repair-hero__item"><span class="repair-hero__item-icon  repair-hero__item-icon--repair"></span>Ремонт электроники любой сложности.
-                    <!--  (замена модульных элементов, чистка от влаги, восстановление и замена компонентов платы и другое) -->
-                </li>
-                <li class="repair-hero__item"><span class="repair-hero__item-icon  repair-hero__item-icon--warranty"></span>Гарантия качества на все виды работ. Мастера с большим опытом. </li>
-                <li class="repair-hero__item"><span class="repair-hero__item-icon  repair-hero__item-icon--details"></span>Широкий спектр необходимых запчастей уже в наличии.</li>
-                <li class="repair-hero__item"><span class="repair-hero__item-icon  repair-hero__item-icon--programs"></span>Программный ремонт, модификация. </li>
-                <li class="repair-hero__item"><span class="repair-hero__item-icon  repair-hero__item-icon--tune"></span>Настройка аккаунтов, установка приложений, перенос данных и многое другое.</li>
-                <li class="repair-hero__item"><span class="repair-hero__item-icon  repair-hero__item-icon--urgent"></span>Срочный ремонт</li>
-            </ul>
-            <!--  .repair-hero__list -->
-    </div>
-        </section>
-        <!--  .repair-hero -->
-    <!--  .container -->
+
+
+    <section class="change-hero">
+        <div class="container">
+            <h2 class="change-hero__caption">Обмен и покупка телефонов</h2>
+            <p class="change-hero__text">Выкупим или обменяем ваш телефон на новый, с вашей доплатой.</p>
+        </div>
+        <!--  .container -->
+    </section>
+    <!--  .change-hero -->
 
 
 
     <div class="container">
         <section class="section">
             <div class="section__info  section__info--repair">
-                <div class="section__caption">Заявка на ремонт</div>
-                <div class="section__description">Хотите оставить заявку на выполнение ремонта Вашего устройства?</div>
+                <div class="section__caption">Заявка на обмен или продажу</div>
+                <div class="section__description">Хотите поменять или продать свой телефон?</div>
             </div>
             <!--  .section__info -->
             <div class="section__container">
@@ -134,11 +126,12 @@
                     <p class="section__text">Заполните форму и наши специалисты свяжутся с Вами на столько быстро, на сколько это возможно в данный момент! </p>
 
                     <input class="form__text-input" type="text" placeholder="Имя и Фамилия" autofocus>
-                    <input class="form__text-input" type="text" placeholder="Точная модель устройства">
-                    <input class="form__text-input" type="text" placeholder="Опишите поломку">
+                    <input class="form__text-input" type="text" placeholder="Точная модель вашего устройства">
+                    <input class="form__text-input" type="text" placeholder="Опишите состояние телефона">
+                    <input class="form__text-input" type="text" placeholder="Какую модель вы хотите получить">
                     <input class="form__text-input" type="phone" placeholder="Контактный телефон">
                     <input class="form__checkbox" type="checkbox" id="urgent-repair">
-                    <label class="form__label  form__label--checkbox" for="urgent-repair">Cделать Ваш ремонт срочно <span class="urgent__hover">?</span><span class="urgent__tooltip">срочный модульный ремонт может занимать от 15минут до 2 часов, сложный компонентный ремонт может занимать от 3 часов до 2 дней. Точные сроки ремонта согласуются с менеджером</span></label>
+                    <!-- <label class="form__label  form__label--checkbox" for="urgent-repair">Cделать Ваш ремонт срочно <span class="urgent__hover">?</span><span class="urgent__tooltip">срочный модульный ремонт может занимать от 15минут до 2 часов, сложный компонентный ремонт может занимать от 3 часов до 2 дней. Точные сроки ремонта согласуются с менеджером</span></label> -->
                     <div class="form__button-container">
                         <input class="button" type="submit" value="Отправить заявку">
                     </div>

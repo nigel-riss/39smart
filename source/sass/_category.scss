@@ -2,12 +2,11 @@
     //
     &__list {
         // box model
-        // border: 1px solid red;
-        // border-top: 1px solid #d1d1d1;
-        border-bottom: 1px solid #d1d1d1;
         padding: 0;
         margin: 0;
-        margin-bottom: 10px;
+        @media (min-width: $tablet) {
+            display: inline-block;
+        }
 
         // visual
         list-style: none;
@@ -16,15 +15,25 @@
     &__item {
         // box model
         padding: 5px 0;
-        // display: inline-block;
-        // border: 1px solid red;
+        @media (min-width: $tablet) {
+            padding: 0 3px;
+            display: inline-block;
+        }
+        @media (min-width: $desktop) {
+            // padding: 0 2px;
+        }
     }
 
     &__link {
         // box model
         display: block;
         padding: 0 20px;
-        // border: 1px solid red;;
+        @media (min-width: $tablet) {
+            padding: 0 15px;
+        }
+        @media (min-width: $desktop) {
+            padding: 0 12px;
+        }
 
         // typography
         color: $grey87;
@@ -33,6 +42,9 @@
         line-height: 36px;
         text-align: left;
         text-decoration: none;
+        @media (min-width: $desktop) {
+            font-size: 14px;
+        }
 
         // visual
         border-radius: 2px;

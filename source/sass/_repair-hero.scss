@@ -1,22 +1,80 @@
 .repair-hero {
     // box model
-    height: 340px;
+    // height: 450px;
+    padding: 0 20px;
+    padding-bottom: 20px;
+    margin-bottom: 60px;
+    @media (min-width: $tablet) {
+        height: 340px;
+        margin-top: -20px;
+    }
 
     // visual
-    background-color: $greyBack;
+    background-color: #f5f5f5;
+    // box-shadow: 0 2px 3px .5px rgba(0, 0, 0, .24);
+    background-repeat: no-repeat;
+    @media (min-width: $tablet) {
+        background-color: #ffffff;
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, .9) 60%, rgba(255, 255, 255, 0) 100%),
+        url("../img/repair-hero.jpg");
+        background-position: 150px center;
+    }
+    @media (min-width: $desktop) {
+        // background-image: linear-gradient(rgba(255, 255, 255, .1) 0%, rgba(255, 255, 255, .1) 100%),
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, .9) 50%, rgba(255, 255, 255, 0) 100%),
+        url("../img/repair-hero.jpg");
+        background-position: center center;
+    }
+
+    &__caption {
+        // box model
+        padding-top: 20px;
+        // @media (min-width: $desktop) {
+        //     padding-left: 40px;
+        // }
+
+        // typography
+        color: $mainColor;
+        font-size: 20px;
+        font-weight: 400;
+        text-align: center;
+        @media (min-width: $tablet) {
+            text-align: left;
+        }
+    }
 
     &__list {
         // box model
         padding: 0;
         margin: 0;
+        vertical-align: center;
+        // @media (min-width: $desktop) {
+        //     padding-left: 40px;
+        // }
+
+        // typography
+        color: $grey87;
+        font-size: 14px;
+        line-height: 1.4;
+        font-weight: 400;
 
         // visual
         list-style: none;
     }
 
+    &__item {
+        // box model
+        padding-bottom: 10px;
+    }
+
     &__item-icon {
+        // box model
+        padding-right: 5px;
+
         // typography
+        color: $mainColor;
         font-family: "icomoon";
+        font-size: 24px;
 
         &--repair::before {
             content: $icon-repair;

@@ -28,6 +28,18 @@ module.exports = function (grunt) {
 
         //     }
         // },
+        postcss: {
+            options: {
+                processors: [
+                    require('autoprefixer')({
+                        browsers: 'last 2 versions'
+                    })
+                ]
+            },
+            style: {
+                src: 'source/css/*.css'
+            }
+        },
 
         express: {
             all: {
@@ -45,8 +57,8 @@ module.exports = function (grunt) {
             style: {
                 files: ['source/sass/**/*.scss'],
                 // tasks: ['sass'],
-                tasks: ['sass', 'csscomb'],
-                // tasks: ['sass', 'postcss'],
+                // tasks: ['sass', 'csscomb', 'postcss'],
+                tasks: ['sass', 'postcss'],
                 options: {
                     spawn: false,
                     livereload: true

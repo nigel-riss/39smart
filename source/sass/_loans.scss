@@ -3,10 +3,17 @@
 
     // typography
     text-align: center;
+    @media (min-width: $desktop) {
+        text-align: left;
+    }
 
     &__header {
         // box model
         display: block;
+        @media (min-width: $desktop) {
+            display: inline-block;
+            // border: 1px solid red;
+        }
 
         // typography
         color: $mainColor;
@@ -25,11 +32,17 @@
         @media (min-width: $tablet) {
             width: 185px;
         }
+        @media (min-width: $desktop) {
+            width: 210px;
+        }
 
         // typography
         text-align: left;
         @media (min-width: $tablet) {
             text-align: center;
+        }
+        @media (min-width: $desktop) {
+            text-align: right;
         }
     }
 }

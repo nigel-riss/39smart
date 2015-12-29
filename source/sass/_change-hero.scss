@@ -1,0 +1,74 @@
+.change-hero {
+    // box model
+    height: 340px;
+    margin-top: -20px;
+    margin-bottom: 60px;
+    padding: 20px;
+    @media (min-width: $tablet) {
+        padding: 40px;
+        margin-top: -20px;
+    }
+    @media (min-width: $desktop) {
+        padding-top: 10px;
+    }
+
+    // visual
+    // background-color: #000000;
+    background-image: url("../img/change-hero.png");
+    background-position: center top;
+    background-size: 500px;
+    background-repeat: no-repeat;
+    @media (min-width: $tablet) {
+        background-size: 800px;
+    }
+    @media (min-width: $desktop) {
+        background-size: 1060px;
+    }
+
+    &__caption {
+        // box model
+        padding-top: 150px;
+        @media (min-width: $tablet) {
+            padding-top: 0;
+        }
+
+        // typography
+        color: $mainColor;
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+        @media (min-width: $tablet) {
+            font-size: 22px;
+            text-align: left;
+        }
+        // @media (min-width: $desktop) {
+        //     font-size: 36px;
+        // }
+    }
+
+    &__text {
+        // box model
+        padding: 0 20px;
+        @media (min-width: $tablet) {
+            padding: 0;
+            width: 300px;
+        }
+        @media (min-width: $desktop) {
+            width: 350px;
+        }
+
+        // typography
+        // color: #ffffff;
+        color: $grey54;
+        font-size: 15px;
+        font-weight: 400;
+        text-align: center;
+        @media (min-width: $tablet) {
+            font-size: 18px;
+            text-align: left;
+        }
+        // @media (min-width: $desktop) {
+        //     font-size: 20px;
+        // }
+    }
+}
