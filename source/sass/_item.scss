@@ -5,11 +5,11 @@
     margin: 5px;
     margin-bottom: 20px;
     @media (min-width: $tablet) {
-        margin: 5px 15px;
+        margin: 20px 15px;
     }
     @media (min-width: $desktop) {
         width: 300px;
-        margin: 5px;
+        margin: 20px 5px;
     }
 
     // typography
@@ -19,10 +19,12 @@
     background-color: $whiteBack;
     cursor: pointer;
     @include itemShadow;
+    transition-property: box-shadow;
+    transition-duration: .17s;
 
     &:hover {
         box-shadow: 0 1px 7px .14px rgba(0,0,0,.12),
-        0 13px 18.8px 1.2px rgba(0, 0, 0, .24);
+        0 5px 18.8px 1.2px rgba(0, 0, 0, .24);
     }
 
     &__info {
@@ -150,8 +152,6 @@
         vertical-align: top;
         height: 140px;
         width: 140px;
-        // float: right;
-        // border: 1px solid red;
 
         // visual
         overflow: hidden;

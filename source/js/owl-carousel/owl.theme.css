@@ -17,7 +17,8 @@
 
 @media (min-width: 768px) {
 	.owl-theme .owl-controls{
-		width: calc(100% - 40px);
+		width: calc(100% - 80px);
+		/*width: 100%;*/
 		position: absolute;
 		bottom: -60px;
 	}
