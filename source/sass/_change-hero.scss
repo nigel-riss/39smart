@@ -1,14 +1,17 @@
 .change-hero {
     // box model
-    height: 340px;
+    height: 200px;
     margin-top: -20px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     padding: 20px;
     @media (min-width: $tablet) {
+        height: 280px;
         padding: 40px;
+        padding-top: 240px;
         margin-top: -20px;
     }
     @media (min-width: $desktop) {
+        height: 340px;
         padding-top: 10px;
     }
 

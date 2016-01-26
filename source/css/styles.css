@@ -1673,9 +1673,9 @@ html {
       content: ""; }
 
 .change-hero {
-  height: 340px;
+  height: 200px;
   margin-top: -20px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   padding: 20px;
   background-image: url("../img/change-hero.png");
   background-position: center top;
@@ -1683,10 +1683,13 @@ html {
   background-repeat: no-repeat; }
   @media (min-width: 768px) {
     .change-hero {
+      height: 280px;
       padding: 40px;
+      padding-top: 240px;
       margin-top: -20px; } }
   @media (min-width: 1060px) {
     .change-hero {
+      height: 340px;
       padding-top: 10px; } }
   @media (min-width: 768px) {
     .change-hero {
