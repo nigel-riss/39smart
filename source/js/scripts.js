@@ -35,7 +35,7 @@ $(document).ready(function() {
             itemsDesktopSmall: false,
             itemsTablet: [737, 1],
             itemsMobile: false,
-            responsiveBaseWidth: ".container",
+            responsiveBaseWidth: ".container"
         });
 
         $(".section__container--sale-items").owlCarousel({
@@ -44,7 +44,17 @@ $(document).ready(function() {
             itemsDesktopSmall: false,
             itemsTablet: [737, 1],
             itemsMobile: false,
+            responsiveBaseWidth: ".container"
+        });
+
+        $(".section__container--review-items").owlCarousel({
+            items: 3,
+            itemsDesktop: [1020, 2],
+            itemsDesktopSmall: false,
+            itemsTablet: [737, 1],
+            itemsMobile: false,
             responsiveBaseWidth: ".container",
+            pagination: false
         });
     }
 

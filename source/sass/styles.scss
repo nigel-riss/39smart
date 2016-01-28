@@ -54,6 +54,22 @@ html {
         display: table;
         width: 100%;
     }
+
+    &--news {
+        // box model
+        display: none;
+        @media (min-width: $tablet) {
+            display: block;
+        }
+    }
+
+    &--reviews {
+        // box model
+        display: none;
+        @media (min-width: $tablet) {
+            display: block;
+        }
+    }
 }
 
 @import "main-header";

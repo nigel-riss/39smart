@@ -2,6 +2,12 @@
     // box model
     height: 340px;
     margin-bottom: 20px;
+    @media (min-width: $tablet) {
+        height: 243px;
+    }
+    @media (min-width: $desktop) {
+        height: 340px;
+    }
 
     // typography
     font-size: 0;

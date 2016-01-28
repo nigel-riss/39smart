@@ -1,8 +1,15 @@
 .review {
+    // positioning
+    position: relative;
+
     // box model
     padding: 20px;
-    margin-top: 5px;
+    margin: 5px;
     margin-bottom: 20px;
+    @media (min-width: $tablet) {
+        height: 220px;
+        margin: 20px 15px;
+    }
 
     // typography 
     text-align: left;
@@ -41,10 +48,30 @@
     }
 
     &__text {
+        // box model
+        @media (min-width: $tablet) {
+            height: 80px;
+        }
+
         // typography
         color: $grey54;
         font-size: 12px;
         font-weight: 400;
         line-height: 24px;
+
+        // visual
+        overflow: hidden;
+    }
+
+    &__rating {
+        @media (min-width: $tablet) {
+            // positioning
+            position: absolute;
+            bottom: 20px;
+
+            // box model
+            width: 260px;
+            // border: 1px solid red;
+        }
     }
 }

@@ -1,23 +1,20 @@
 .change-hero {
     // box model
-    height: 200px;
+    height: 340px;
     margin-top: -20px;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     padding: 20px;
     @media (min-width: $tablet) {
-        height: 280px;
         padding: 40px;
-        padding-top: 240px;
         margin-top: -20px;
     }
     @media (min-width: $desktop) {
-        height: 340px;
         padding-top: 10px;
     }
 
     // visual
     // background-color: #000000;
-    background-image: url("../img/change-hero.png");
+    background-image: url("../img/change-hero.jpg");
     background-position: center top;
     background-size: 500px;
     background-repeat: no-repeat;

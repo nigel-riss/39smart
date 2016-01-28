@@ -42,7 +42,7 @@
                         </svg>
                     </div>
                     
-                    <h1 class="logo__caption">смартфонов</h1>
+                    <h1 class="logo__caption"><span style="display:none;">39</span>смартфонов</h1>
                     
                     <svg class="menu-button" height="24px" viewBox="0 0 24 24" width="24px">
                         <path d="M0.577138391,0 C0.258393659,0 0,0.221932411 0,0.5 C0,0.776142375 0.262396485,1 0.577138391,1 L21.4228616,1 C21.7416064,1 22,0.77806759 22,0.5 C22,0.223857625 21.7376035,0 21.4228616,0 L0.577138391,0 L0.577138391,0 Z M0.577138391,5 C0.258393659,5 0,5.2219324 0,5.5 C0,5.77614235 0.262396485,6 0.577138391,6 L21.4228616,6 C21.7416064,6 22,5.7780676 22,5.5 C22,5.22385765 21.7376035,5 21.4228616,5 L0.577138391,5 L0.577138391,5 Z M0.577138391,10 C0.258393659,10 0,10.2219324 0,10.5 C0,10.7761424 0.262396485,11 0.577138391,11 L21.4228616,11 C21.7416064,11 22,10.7780676 22,10.5 C22,10.2238576 21.7376035,10 21.4228616,10 L0.577138391,10 L0.577138391,10 Z" id="path-1" />
@@ -101,17 +101,20 @@
             <section class="hero">
                 <div class="hero-slider">
                     <div class="hero-slider__container">
-                        <div class="slide  slide--transparent">
-                            <img class="slide__image" src="img/slide-1.png" alt="slide 1">
+                        <div class="slide">
+                            <img class="slide__image  slide__image--tablet" src="img/slide-1.jpg" alt="slide 1">
+                            <img class="slide__image  slide__image--mobile" src="img/slide-small-1.jpg" alt="slide 1">
                         </div>
-                        <div class="slide  slide--black">
-                            <img class="slide__image" src="img/slide-2.png" alt="slide 2">
-                            <div class="slide__caption">Супергеройские чехлы</div><!--  .slide__caption -->
-                            <div class="slide__sub-caption">Изысканный и инновационный дизайн</div><!--  .slide__sub-caption -->
-                            <p class="slide__text">Смартфон Samsung Galaxy S6 edge обладает элегантным дизайном благодаря гармоничному сочетанию стекла и металла. Это первый в мире смартфон с изогнутым с двух сторон экраном.</p><!--  .slide__text -->
-                            <div class="button">Уже в продаже</div><!--  .button -->
+
+                        <div class="slide">
+                            <img class="slide__image  slide__image--tablet" src="img/slide-2.jpg" alt="slide 2">
+                            <img class="slide__image  slide__image--mobile" src="img/slide-small-2.jpg" alt="slide 2">
+                            
                         </div>
-                        <div class="slide  slide--white"></div>
+                        <div class="slide">
+                            <img class="slide__image  slide__image--tablet" src="img/slide-3.jpg" alt="slide 3">
+                            <img class="slide__image  slide__image--mobile" src="img/slide-small-3.jpg" alt="slide 3">
+                        </div>
                     </div>
                 </div>
                 
@@ -229,7 +232,7 @@
         
         
         
-        <div class="container">
+        <div class="container  container--news">
             <section class="section">
                 <div class="section__info">
                     <h2 class="section__caption">Наши новости и блог</h2>
@@ -323,50 +326,56 @@
         
         
         
-        <div class="container">
+        <div class="container  container--reviews">
             <section class="section">
                 <div class="section__info">
                     <h2 class="section__caption">Отзывы наших клиентов</h2>
                     <p class="section__description">Люди говорят о нас</p>
                 </div>
-                <div class="section__container">
+                <div class="section__container  section__container--review-items">
                     <div class="review">
                         <div class="review__image-container">
                             <img class="review__image" src="img/review-1.jpg" alt="">
                         </div>
-                        <div class="review__caption">Мария Иванова</div>
+                        <div class="review__caption">Василий Теркин</div>
                         <div class="review__text">Смартфон одно загляденье! И оболочка MIUI совсем по другому воспринимается чем обычный android</div>
-                        <div class="rating">
-                            <div class="rating__front"></div>
-                            <div class="rating__back"></div>
-                        </div>
+                        <div class="review__rating">
+                            <div class="rating">
+                                <div class="rating__front"></div>
+                                <div class="rating__back"></div>
+                            </div>
+                        </div><!--  .review__rating -->
                     </div>
                     
                     <div class="review">
                         <div class="review__image-container">
                             <img class="review__image" src="img/review-2.jpg" alt="">
                         </div>
-                        <div class="review__caption">Доктор Хаус</div>
+                        <div class="review__caption">Мария Иванова</div>
                         <div class="review__text">Понравился сайт, очень удобная навигация по нему, подробное описание с фотографиями на страницах с товарами.</div>
-                        <div class="rating">
-                            <div class="rating__front" style="width: 80%;"></div>
-                            <div class="rating__back"></div>
-                        </div>
+                        <div class="review__rating">
+                            <div class="rating">
+                                <div class="rating__front" style="width: 80%;"></div>
+                                <div class="rating__back"></div>
+                            </div>
+                        </div><!--  .review__rating -->
                     </div>
                     
                     <div class="review">
                         <div class="review__image-container">
                             <img class="review__image" src="img/review-3.jpg" alt="">
                         </div>
-                        <div class="review__caption">Василий Теркин</div>
+                        <div class="review__caption">Доктор Хаус</div>
                         <div class="review__text">Все лгут!</div>
-                        <div class="rating">
-                            <div class="rating__front" style="width: 20%;"></div>
-                            <div class="rating__back"></div>
-                        </div>
+                        <div class="review__rating">
+                            <div class="rating">
+                                <div class="rating__front" style="width: 20%;"></div>
+                                <div class="rating__back"></div>
+                            </div>
+                        </div><!--  .review__rating -->
                     </div>
-                    <a class="button" href="#">Добавить отзыв</a>
                 </div>
+                    <a class="button" href="#">Добавить отзыв</a>
                 <div class="section__navigator"></div>
             </section>
         </div>

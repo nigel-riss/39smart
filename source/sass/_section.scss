@@ -126,6 +126,12 @@
                 }
             }
         }
+
+        &--review-items {
+            @media (min-width: $tablet) {
+                margin-bottom: 20px;
+            }
+        }
     }
 
     &__navigator {
