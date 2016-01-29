@@ -2,7 +2,7 @@
     // box model
     margin-top: 5px;
     margin-bottom: 20px;
-    @media (min-width: $desktop) {
+    @media (min-width: $tablet) {
         display: inline-block;
         vertical-align: top;
         width: 300px;
@@ -15,6 +15,15 @@
     // visual
     background-color: $whiteBack;
     @include itemShadow;
+
+    &:nth-of-type(n + 3){
+        @media (min-width: $tablet) {
+            display: none;
+        }
+        @media (min-width: $desktop) {
+            display: inline-block;
+        }
+    }
 
     &__caption {
         // box model
@@ -40,7 +49,7 @@
     &__text {
         // box model
         padding: 30px 20px;
-        @media (min-width: $desktop) {
+        @media (min-width: $tablet) {
             height: 300px;
         }
 

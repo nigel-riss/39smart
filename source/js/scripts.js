@@ -54,7 +54,8 @@ $(document).ready(function() {
             itemsTablet: [737, 1],
             itemsMobile: false,
             responsiveBaseWidth: ".container",
-            pagination: false
+            pagination: false,
+            autoPlay: true
         });
     }
 
