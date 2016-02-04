@@ -87,6 +87,9 @@
     }
 
     &__container {
+        // positioning
+        position: relative;
+
         // box model
         padding: 0;
         @media (min-width: $tablet) {

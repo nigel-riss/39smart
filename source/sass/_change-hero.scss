@@ -1,35 +1,49 @@
 .change-hero {
+    // positioning
+    position: relative;
+
     // box model
     height: 340px;
     margin-top: -20px;
-    margin-bottom: 60px;
-    padding: 20px;
-    @media (min-width: $tablet) {
-        padding: 40px;
-        margin-top: -20px;
-    }
-    @media (min-width: $desktop) {
-        padding-top: 10px;
-    }
+    // padding: 20px;
 
-    // visual
-    // background-color: #000000;
-    background-image: url("../img/change-hero.jpg");
-    background-position: center top;
-    background-size: 500px;
-    background-repeat: no-repeat;
     @media (min-width: $tablet) {
-        background-size: 800px;
+        // padding: 40px;
+        padding-top: 0;
     }
     @media (min-width: $desktop) {
-        background-size: 1060px;
+        // padding-top: 10px;
+    }
+    // border: 1px solid red;
+
+    &__image {
+        // positioning
+        position: absolute;
+        top: 1px;
+        z-index: 1;
+
+        // box model
+        display: none;
+        width: $mobile;
+        @media (min-width: $tablet) {
+            width: $tablet;
+        }
+        @media (min-width: $desktop) {
+            width: 100%;
+        }
     }
 
     &__caption {
+        // positioning
+        position: relative;
+        z-index: 2;
+
         // box model
-        padding-top: 150px;
+        margin: 0;
+        padding: 30px 0;
+        padding-top: 120px;
         @media (min-width: $tablet) {
-            padding-top: 0;
+            padding: 30px 0;
         }
 
         // typography
@@ -37,17 +51,24 @@
         font-size: 18px;
         font-weight: 400;
         text-align: center;
+        text-transform: uppercase;
         @media (min-width: $tablet) {
             font-size: 22px;
             text-align: left;
+            // font-weight: 700;
         }
-        // @media (min-width: $desktop) {
-        //     font-size: 36px;
-        // }
+        @media (min-width: $desktop) {
+            font-size: 36px;
+        }
     }
 
     &__text {
+        // positioning
+        position: relative;
+        z-index: 2;
+
         // box model
+        display: none;
         padding: 0 20px;
         @media (min-width: $tablet) {
             padding: 0;
@@ -59,9 +80,10 @@
 
         // typography
         // color: #ffffff;
-        color: $grey54;
+        color: $grey87;
         font-size: 15px;
         font-weight: 400;
+        line-height: 1.4;
         text-align: center;
         @media (min-width: $tablet) {
             font-size: 18px;
