@@ -1,4 +1,7 @@
 .news-item {
+    // positioning
+    position: relative;
+
     // box model
     margin-top: 5px;
     margin-bottom: 20px;
@@ -61,6 +64,26 @@
     }
 
     &__more {
+        // positioning
+        position: absolute;
+        bottom: 10px;
+        right: 20px;
+
         // box model
+        padding: 5px 10px;
+
+        // typography
+        color: $mainColor;
+        line-height: 14px;
+        text-decoration: none;
+
+        &:hover {
+            // typography
+            color: #ffffff;
+            
+            // visual
+            background-color: $mainColor;
+            border-radius: 2px;
+        }
     }
 }
