@@ -1,6 +1,14 @@
 .main-footer {
+    // positioning
+    @media (min-width: $desktop) {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
     // box model
     padding: 20px 0;
+    width: 100%;
 
     // typography
     // text-align: center;

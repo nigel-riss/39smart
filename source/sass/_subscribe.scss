@@ -1,0 +1,28 @@
+.subscribe-text {
+    // box model
+    @media (min-width: $tablet) {
+        padding-bottom: 40px;
+    }
+
+    // typography
+    text-align: center;
+    @media (min-width: $tablet) {
+        font-size: 18px;
+    }
+    @media (min-width: $desktop) {
+        font-size: 22px;
+    }
+
+    &__address {
+        // typography
+        color: $mainColor;
+    }
+}
+
+.subscribe-icon {
+    display: block; 
+    margin: 0 auto;
+    @media (min-width: $desktop) {
+        padding-bottom: 40px;
+    }
+}

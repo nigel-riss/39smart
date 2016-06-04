@@ -1,13 +1,16 @@
 .slider-button {
     // positioning
     position: absolute;
-    top: 260px;
+    top: -170px;
     @media (min-width: $tablet) {
-        top: 190px;
+        // top: 190px;
     }
 
     // box model
+    // border: 1px solid red;
     display: inline-block;
+    height: 26px;
+    width: 26px;
 
     // typography
     color: $mainColor;
@@ -29,11 +32,11 @@
 
     &--prev {
         // positioning
-        left: 5px;
+        left: -25px;
     }
 
     &--next {
         // positioning
-        right: 5px;
+        right: -25px;
     }
 }

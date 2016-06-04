@@ -35,6 +35,11 @@ $(document).ready(function() {
             itemsDesktopSmall: false,
             itemsTablet: [737, 1],
             itemsMobile: false,
+            navigation: true,
+            navigationText: [
+                '<div class="slider-button  slider-button--prev">&#xe5c4;</div>',
+                '<div class="slider-button  slider-button--next">&#xe5c8;</div>'
+            ],
             responsiveBaseWidth: ".container"
         });
 
@@ -80,4 +85,11 @@ $(document).ready(function() {
             mainMenuList.classList.add("main-nav__list--shown");
         }
     });
+
+    //!!!!!!!!!!!!!!!!!!!!!!!!!///////////
+    // Для удобства удалить при релизе!!!
+    //////////////////////////////////////
+    window.onresize = function() {
+        location.reload();
+    }
 });

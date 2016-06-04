@@ -425,13 +425,19 @@ th {
 body {
   padding: 0;
   margin: 0;
+  min-height: 100%;
   min-width: 320px;
   margin: 0 auto;
   font-family: "Roboto", sans-serif;
   font-weight: 300; }
+  @media (min-width: 1060px) {
+    body {
+      padding-bottom: 120px; } }
 
 html {
-  width: 100%; }
+  position: relative;
+  width: 100%;
+  min-height: 100%; }
 
 .container {
   position: relative;
@@ -1314,28 +1320,34 @@ html {
 
 .main-footer {
   padding: 20px 0;
+  width: 100%;
   background-color: #8bc34a; }
+  @media (min-width: 1060px) {
+    .main-footer {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0; } }
 
 .slider-button {
   position: absolute;
-  top: 260px;
+  top: -170px;
   display: inline-block;
+  height: 26px;
+  width: 26px;
   color: #8bc34a;
   font-family: "icomoon";
   font-size: 24px;
   border-radius: 50%;
   cursor: pointer;
   z-index: 9; }
-  @media (min-width: 768px) {
-    .slider-button {
-      top: 190px; } }
   .slider-button:hover {
     color: #ffffff;
     background-color: #8bc34a; }
   .slider-button--prev {
-    left: 5px; }
+    left: -25px; }
   .slider-button--next {
-    right: 5px; }
+    right: -25px; }
 
 .catalog-filter {
   padding: 20px 0;
@@ -1660,6 +1672,10 @@ html {
       outline: none; }
     .form__text-input:hover {
       border-bottom: 1px solid #8bc34a; }
+  .form__textarea {
+    border: 1px solid #9a9a9a;
+    margin-top: 20px;
+    width: 100%; }
   .form__checkbox {
     display: none; }
     .form__checkbox:checked ~ .form__label::before {
@@ -1941,6 +1957,27 @@ td {
   border: 1px solid #f1f1f1;
   font-size: 14px;
   line-height: 1.4; }
+
+.subscribe-text {
+  text-align: center; }
+  @media (min-width: 768px) {
+    .subscribe-text {
+      padding-bottom: 40px; } }
+  @media (min-width: 768px) {
+    .subscribe-text {
+      font-size: 18px; } }
+  @media (min-width: 1060px) {
+    .subscribe-text {
+      font-size: 22px; } }
+  .subscribe-text__address {
+    color: #8bc34a; }
+
+.subscribe-icon {
+  display: block;
+  margin: 0 auto; }
+  @media (min-width: 1060px) {
+    .subscribe-icon {
+      padding-bottom: 40px; } }
 
 * {
   box-sizing: border-box; }
