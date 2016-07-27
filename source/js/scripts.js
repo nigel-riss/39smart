@@ -91,7 +91,7 @@ $(document).ready(function() {
     // Обязательно удалить при релизе!!! Или не надо?
     // ХЗ
     ////////////////////////////////////////////////
-    window.onresize = function() {
-        location.reload();
-    }
+    // window.onresize = function() {
+    //     location.reload();
+    // }
 });
