@@ -3,24 +3,51 @@
     //.single-item__image-container
     /////////////////////////////////
     &__image-container {
-        // positioning
-        position: relative;
-
         // box model
-        height: 310px;
+        // border: 1px solid red;
+        margin-bottom: 40px;
         margin-top: 10px;
         width: 310px;
 
         @media (min-width: $tablet) {
             display: inline-block;
-            height: 320px;
             vertical-align: top;
             width: 320px;
         }
 
         @media (min-width: $desktop) {
-            height: 400px;
             width: 400px;
+        }
+    }
+
+    &__thumbs-container {
+        // box model
+        // border: 1px solid red;
+        border-top: 1px solid #eee;
+        padding-top: 20px;
+        width: 310px;
+        @media (min-width: $tablet) {
+            width: 320px;
+        }
+        @media (min-width: $desktop) {
+            width: 400px;
+        }
+
+        // typography
+        font-size: 0;
+    }
+
+    &__thumb {
+        // box model
+        // border: 1px solid red;
+        display: inline-block;
+        width: 100px;
+        @media (min-width: $desktop) {
+            width: 130px;
+        }
+
+        & img {
+            width: 100%;
         }
     }
 
@@ -30,54 +57,96 @@
     &__image {
         // box model
         width: 100%;
+        margin-bottom: 20px;
+    }
+
+    &__header {
+        // box model
+        padding-bottom: 20px;
 
         // visual
-        @include itemShadow;
+        background-color: #ffffff;
+        border-bottom: 1px solid #eee;
+    }
+
+    &__caption {
+        // box model
+        margin-bottom: 10px;
+        // typography
+        color: $mainColor;
+        font-size: 20px;
+        font-weight: 400;
+        @media (min-width: $tablet) {
+            font-size: 24px;
+        }
+    }
+
+    &__description {
+        // typography
+        color: $grey54;
+        font-size: 14px;
+        font-weight: 400;
+        @media (min-width: $tablet) {
+            font-size: 16px;
+        }
     }
 
     ///////////////////////
     //.single-item__price
     ///////////////////////
     &__price {
-        // positioning
-        position: absolute;
-        bottom: 15px;
-        left: 15px;
-
-        // box model
-        padding: 5px;
-
         // typography
-        color: $mainColor;
-        font-size: 24px;
+        // color: $mainColor;
+        font-size: 16px;
         line-height: 1;
         text-align: left;
         @media (min-width: $tablet) {
-            font-size: 26px;
+            font-size: 20px;
         }
         @media (min-width: $desktop) {
-            font-size: 28px;
+            font-size: 22px;
         }
-
-        // visual
-        background-color: #ffffff;
     }
 
     //////////////////////////
     //.single-item__ex-price
     //////////////////////////
     &__ex-price {
-        // positioning
-        position: absolute;
-        bottom: 50px;
-        left: 15px;
-
-        // box model
-        padding: 5px;
-
         // typography
         color: #999;
         text-decoration: line-through;
+    }
+
+    &__availability {
+        // typography
+        font-size: 18px;
+        // font-weight: 700;
+
+        &--avail {
+            color: $mainColor;
+        }
+
+        &--not-avail {
+            color: #c34a4a;
+        }
+    }
+
+    &__palette {
+        // box model
+        display: block;
+        padding-top: 20px;
+
+        // typography
+        font-size: 0;
+    }
+
+    &__color {
+        // box model
+        margin-right: 5px;
+        height: 24px;
+        width: 24px;
+        display: inline-block;
+        border-radius: 50%;
     }
 
     ////////////////////////////
@@ -98,6 +167,7 @@
         }
 
         // typography
+        color: #3b3b3b;
         font-size: 14px;
 
         & ul {
@@ -112,7 +182,7 @@
             // typography
             // color: #ffffff;
             font-size: 14px;
-            font-weight: 300;
+            font-weight: 400;
             line-height: 1.6;
             text-align: left;
 

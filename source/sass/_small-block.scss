@@ -20,8 +20,19 @@
     background-color: $mainColor;
     border-radius: 2px;
 
-    &:nth-of-type(n + 3) {
+    &:nth-of-type(n + 2) {
         margin-right: 0;
+    }
+
+    &:hover {
+        box-shadow: 0 1px 7px .14px rgba(0,0,0,.12),
+        0 5px 18.8px 1.2px rgba(0, 0, 0, .24);
+
+        /////////////////////////
+        // on hover parameters //
+        /////////////////////////
+        // positioning
+        z-index: 2;
     }
 
     &__text {

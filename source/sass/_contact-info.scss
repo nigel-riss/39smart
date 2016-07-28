@@ -122,6 +122,57 @@
         font-weight: 400;
     }
 
+    &__link:hover {
+        // typography
+        color: $mainColor;
+        text-decoration: underline;
+    }
+
+    @media(min-width: $desktop){
+        &__link:hover .contact__popup {
+            display: block;
+        }
+    }
+
+    &__popup {
+        // positioning
+        position: absolute;
+        z-index: 2;
+        top: 78px;
+        left: -10px;
+
+        // box model
+        display: none;
+        height: 220px;
+        width: 300px;
+        padding: 10px;
+
+        // visual
+        @include itemShadow;
+        border-radius: 5px;
+        background-color: $mainColor;
+
+        &:before {
+            content: "";
+
+            // positioning
+            position: absolute;
+            top: -40px;
+            left: 130px;
+
+            // box model
+            box-sizing: border-box;
+            display: block;
+            height: 40px;
+            width: 40px;
+
+            // visual
+            background-color: transparent;
+            border: 20px solid transparent;
+            border-bottom: 20px solid $mainColor;
+        }
+    }
+
     &--footer {
         &::before {
             // typography

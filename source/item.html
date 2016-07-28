@@ -14,6 +14,14 @@
     <title>39 смартфонов</title>
     <link rel="stylesheet" href="css/styles.css">
 
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#8BC34A">
+    <meta name="theme-color" content="#ffffff">
+
     <!-- Important Owl stylesheet -->
     <link rel="stylesheet" href="js/owl-carousel/owl.carousel.css">
 
@@ -52,9 +60,14 @@
 
             <div class="contact-info">
                 <div class="contact  contact--address">
-                    <div class="contact__main">Советский проспект 6А, 3-й этаж</div>
-                    <div class="contact__additional">ТЦ Северный
-                        <br>ориентир McDonalds</div>
+                    <a class="contact__link" href="about.html#map">
+                        <div class="contact__popup">
+                            <img src="img/minimap.jpg" alt="minimap">
+                        </div>
+                        <div class="contact__main">Советский проспект 6А, 3-й этаж</div>
+                        <div class="contact__additional">ТЦ Северный
+                            <br>ориентир McDonalds</div>
+                    </a>
                 </div>
                 <div class="contact  contact--schedule">
                     <div class="contact__main">График работы</div>
@@ -104,63 +117,41 @@
 
 
     <div class="container">
-        <section class="section  section--about">
-            <div class="section__info">
-                <div class="section__caption">Nokia 3310</div>
-                <div class="section__description">Лучший телефон в мире</div>
-            </div>
-            <!--  .section__info -->
-
+        <section class="">
             <div class="single-item">
                 <div class="single-item__image-container">
-                    <img class="single-item__image" src="img/nokia.jpg" alt="item picture">
-                    <div class="single-item__ex-price">33 500 руб</div>
-                    <div class="single-item__price">27 490 руб</div>
+                    <img class="single-item__image" src="img/iphone-6-white-01.jpg" alt="item picture">
+
+                    <div class="single-item__thumbs-container">
+                        <div class="single-item__thumb">
+                            <a href=""><img src="img/iphone-6-white-02.jpg" alt="item thumb" /></a>
+                        </div>
+                        <div class="single-item__thumb">
+                            <a href=""><img src="img/iphone-6-white-03.jpg" alt="item thumb" /></a>
+                        </div>
+                        <div class="single-item__thumb">
+                            <a href=""><img src="img/iphone-6-white-04.jpg" alt="item thumb" /></a>
+                        </div>
+                    </div>
                 </div>
                 <!-- <div class="single-item__info">
                     <div class="single-item__brand">Samsung</div>
                     <div class="single-item__model">Galaxy Note 4</div>
                 </div> -->
                 <div class="single-item__parameters">
-                    <table>
-                        <tr>
-                            <td>Тип устройства</td>
-                            <td>Лучший мобильный телефон</td>
-                        </tr>
-                        <tr>
-                            <td>Дисплей</td>
-                            <td>Монохромный, 84х84 пикселей</td>
-                        </tr>
-                        <tr>
-                            <td>Встроенная память</td>
-                            <td>100 SMS</td>
-                        </tr>
-                        <tr>
-                            <td>Связь</td>
-                            <td>GSM 900, GSM 1800</td>
-                        </tr>
-                        <tr>
-                            <td>Вес</td>
-                            <td>133 г</td>
-                        </tr>
-                        <tr>
-                            <td>Тыловая камера</td>
-                            <td>Отсутствует</td>
-                        </tr>
-                        <tr>
-                            <td>Фронтальная камера</td>
-                            <td>Отсутствует</td>
-                        </tr>
-                        <tr>
-                            <td>Время работы</td>
-                            <td>Бесконечно</td>
-                        </tr>
-                        <tr>
-                            <td>Дополнительные функции</td>
-                            <td>самооборона, можно колоть орехи</td>
-                        </tr>
-                    </table>
+                    <div class="single-item__header">
+                        <div class="single-item__caption">iPhone 6 128Gb</div>
+                        <div class="single-item__price">50 990 руб</div>
 
+                    </div>
+
+                    <div class="single-item__palette">
+                        <div class="single-item__color" style="background-color:#ACADB2;" title="Черный"></div>
+                        <div class="single-item__color" style="background-color:#D2D4D3; " title="Серый"></div>
+                        <div class="single-item__color" style="background-color:#ffe7a5; " title="Золотой"></div>
+                        <div class="single-item__color" style="background-color:#E8B9B1; " title="Розовое золото"></div>
+                    </div>
+                    
                     <ul>
                         <li>Новый, гарантия 1 год.</li>
                         <li>Android 5.0</li>
@@ -172,6 +163,9 @@
                         <li>аккумулятор 3000 мА/ч</li>
                         <li>вес 170 г, ШxВxТ 77.20x152.50x10.90 мм</li>
                     </ul>
+
+                    <div class="single-item__availability  single-item__availability--avail">в наличии</div>
+                    <!-- <div class="single-item__availability  single-item__availability--not-avail">нет в наличии</div> -->
 
                     <p class="single-item__text">
                         Nokia 3310 — двухдиапазонный (GSM 900/1800) сотовый телефон фирмы Nokia. Выпущен в четвёртом квартале 2000 года, придя на смену модели Nokia 3210. Nokia 3310 — одна из самых удачных моделей в истории: было продано около 126 миллионов аппаратов
@@ -322,7 +316,6 @@
     <script src="js/owl-carousel/owl.carousel.js"></script>
 
     <script src="js/scripts.js"></script>
-    <script src="js/catalog.js"></script>
 </body>
 
 </html>
