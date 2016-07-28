@@ -20,6 +20,7 @@
     font-size: 0;
 
     // visual
+    overflow: hidden;
     background-color: $whiteBack;
     cursor: pointer;
     @include itemShadow;
@@ -124,7 +125,16 @@
         color: $grey54;
         font-size: 14px;
         font-weight: 400;
-        white-space: nowrap;
+        // white-space: nowrap;
+        width: 120px;
+        height: 40px;
+        overflow: hidden;
+    }
+
+    &__new {
+        // typography
+        color: $mainColor;
+        font-size: 16px;
     }
 
     &__price {
@@ -170,8 +180,8 @@
     &__super-price-icon {
         // positioning
         position: absolute;
-        top: 48px;
-        left: 32px;
+        bottom: 0px;
+        left: 210px;
 
         // box model
         height: 48px;
@@ -193,8 +203,8 @@
     &__sale-icon {
         // positioning
         position: absolute;
-        top: 48px;
-        left: 32px;
+        bottom: 0px;
+        left: 210px;
 
         // box model
         height: 48px;

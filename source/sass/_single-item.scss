@@ -140,8 +140,20 @@
         font-size: 0;
     }
 
+    &__color-text {
+        // box model
+        display: inline-block;
+        vertical-align: middle;
+        padding-right: 5px;
+
+        // typography
+        font-size: 18px;
+        font-weight: 700;
+    }
+
     &__color {
         // box model
+        vertical-align: middle;
         margin-right: 5px;
         height: 24px;
         width: 24px;
