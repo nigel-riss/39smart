@@ -20,7 +20,7 @@
     background-color: $mainColor;
     border-radius: 2px;
 
-    &:nth-of-type(n + 2) {
+    &--last {
         margin-right: 0;
     }
 

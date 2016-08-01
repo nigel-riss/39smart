@@ -43,6 +43,10 @@
             width: 380px;
         }
 
+        &:focus {
+            outline: none;
+        }
+
         // typography
         font-size: 14px;
         font-weight: 500;

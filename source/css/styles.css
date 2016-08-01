@@ -610,7 +610,7 @@ a {
       display: block; } }
   .contact__popup {
     position: absolute;
-    z-index: 2;
+    z-index: 9;
     top: 78px;
     left: -10px;
     display: none;
@@ -789,8 +789,10 @@ a {
     outline: none;
     border-color: #8bc34a; }
 
+.hero {
+  font-size: 0; }
+
 .hero-ads {
-  font-size: 0;
   padding-top: 30px; }
   @media (min-width: 768px) {
     .hero-ads {
@@ -798,12 +800,14 @@ a {
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      -webkit-justify-content: space-between;
-          -ms-flex-pack: justify;
-              justify-content: space-between; } }
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around; } }
   @media (min-width: 768px) {
     .hero-ads {
       text-align: center; } }
+  .hero-ads a {
+    font-size: 0; }
 
 .hero-slider {
   height: 340px;
@@ -853,7 +857,7 @@ a {
     .small-block {
       width: 340px;
       margin-right: 17px; } }
-  .small-block:nth-of-type(n + 2) {
+  .small-block--last {
     margin-right: 0; }
   .small-block:hover {
     box-shadow: 0 1px 7px 0.14px rgba(0, 0, 0, 0.12), 0 5px 18.8px 1.2px rgba(0, 0, 0, 0.24);
@@ -1169,6 +1173,8 @@ a {
     @media (min-width: 768px) {
       .write-us__email {
         width: 380px; } }
+    .write-us__email:focus {
+      outline: none; }
     .write-us__email:focus {
       border: none;
       border-radius: 20px; }

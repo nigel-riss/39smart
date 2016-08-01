@@ -1,11 +1,13 @@
 .hero {
     // box model
     // height: 340px;
+    // typography
+    font-size: 0;
 }
 
 .hero-ads {
     // typography
-    font-size: 0;
+    // font-size: 0;
 
     // .container {
     // box model
@@ -14,12 +16,16 @@
         padding-top: 0;
         display: flex;
         // border: 1px solid red;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     // }
 
     // typography
     @media (min-width: $tablet) {
         text-align: center;
+    }
+
+    & a {
+        font-size: 0;
     }
 }
