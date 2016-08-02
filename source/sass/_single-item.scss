@@ -3,6 +3,8 @@
     //.single-item__image-container
     /////////////////////////////////
     &__image-container {
+        // positioning
+        position: relative;
         // box model
         // border: 1px solid red;
         margin-bottom: 40px;
@@ -17,6 +19,24 @@
 
         @media (min-width: $desktop) {
             width: 400px;
+        }
+    }
+
+    &__back {
+        display: none;
+        @media (min-width: $desktop) {
+            // box model
+            display: block;
+
+            // positioning
+            position: absolute;
+            top: 200px;
+
+            // typography
+
+            // visual
+            @include justButton;
+            padding: 0 10px;
         }
     }
 

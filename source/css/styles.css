@@ -1485,16 +1485,21 @@ a {
           display: inline-block; } }
     @media (min-width: 1060px) {
       .catalog-filter__container--category {
+        display: block;
         border-top: 1px solid #d1d1d1; } }
     @media (min-width: 1060px) {
       .catalog-filter__container--brands {
         padding-top: 12px;
         padding-bottom: 12px;
-        border-top: 1px solid #d1d1d1;
-        border-left: 1px solid #d1d1d1; } }
+        border-right: 1px solid #d1d1d1;
+        border-bottom: none; } }
+    @media (min-width: 1060px) {
+      .catalog-filter__container--sort {
+        border-bottom: none; } }
     @media (min-width: 1060px) {
       .catalog-filter__container--price {
-        border-left: 1px solid #d1d1d1; } }
+        display: block;
+        border-top: 1px solid #d1d1d1; } }
 
 .category__list {
   padding: 0;
@@ -1694,7 +1699,6 @@ a {
       height: 600px; } }
   @media (min-width: 1060px) {
     .photo {
-      background-attachment: fixed;
       background-size: 1920px 600px; } }
 
 .form {
@@ -1918,6 +1922,7 @@ a {
         text-align: left; } }
 
 .single-item__image-container {
+  position: relative;
   margin-bottom: 40px;
   margin-top: 10px;
   width: 310px; }
@@ -1929,6 +1934,34 @@ a {
   @media (min-width: 1060px) {
     .single-item__image-container {
       width: 400px; } }
+
+.single-item__back {
+  display: none; }
+  @media (min-width: 1060px) {
+    .single-item__back {
+      display: block;
+      position: absolute;
+      top: 200px;
+      display: inline-block;
+      border: none;
+      padding: 0 40px;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 36px;
+      text-transform: uppercase;
+      text-decoration: none;
+      background-color: #8bc34a;
+      border-radius: 2px;
+      box-shadow: 0 3px 4.7px 0.3px rgba(0, 0, 0, 0.24);
+      cursor: pointer;
+      transition-property: box-shadow;
+      transition-duration: .17s;
+      padding: 0 10px; }
+      .single-item__back:hover {
+        color: #8bc34a;
+        background-color: #ffffff;
+        box-shadow: 0 5px 18.8px 1.2px rgba(0, 0, 0, 0.24); } }
 
 .single-item__thumbs-container {
   border-top: 1px solid #eee;

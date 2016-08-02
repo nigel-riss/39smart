@@ -124,6 +124,7 @@
 
         &--category {
             @media (min-width: $desktop) {
+                display: block;
                 border-top: 1px solid #d1d1d1;
             }
         }
@@ -132,14 +133,22 @@
             @media (min-width: $desktop) {
                 padding-top: 12px;
                 padding-bottom: 12px;
-                border-top: 1px solid #d1d1d1;
-                border-left: 1px solid #d1d1d1;
+                // border-top: 1px solid #d1d1d1;
+                border-right: 1px solid #d1d1d1;
+                border-bottom: none;
+            }
+        }
+
+        &--sort {
+            @media (min-width: $desktop) {
+                border-bottom: none;
             }
         }
 
         &--price {
             @media (min-width: $desktop) {
-                border-left: 1px solid #d1d1d1;
+                display: block;
+                border-top: 1px solid #d1d1d1;
             }
         }
     }
