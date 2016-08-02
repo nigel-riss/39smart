@@ -1699,6 +1699,7 @@ a {
       height: 600px; } }
   @media (min-width: 1060px) {
     .photo {
+      background-attachment: fixed;
       background-size: 1920px 600px; } }
 
 .form {
