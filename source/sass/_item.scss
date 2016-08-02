@@ -127,14 +127,30 @@
         font-weight: 400;
         // white-space: nowrap;
         width: 120px;
-        height: 40px;
+        height: 80px;
         overflow: hidden;
     }
 
     &__new {
+        // positioning
+        position: absolute;
+        top: 113px;
+        left: 130px;
+
+        // box model
+        display: block;
+        padding: 3px 10px;
+        // width: 100px;
+
         // typography
-        color: $mainColor;
+        // color: $mainColor;
+        color: #fff;
         font-size: 16px;
+        white-space: nowrap;
+
+        // visual
+        background-color: $mainColor;
+        border-radius: 5px;
     }
 
     &__price {
