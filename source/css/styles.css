@@ -1484,7 +1484,8 @@ a {
     @media (min-width: 1060px) {
       .catalog-filter__container {
         display: inline-block;
-        vertical-align: bottom; } }
+        vertical-align: bottom;
+        border-bottom: none; } }
     .catalog-filter__container--hide {
       display: none; }
       @media (min-width: 768px) {
@@ -1496,7 +1497,8 @@ a {
     @media (min-width: 1060px) {
       .catalog-filter__container--category {
         display: block;
-        border-top: 1px solid #d1d1d1; } }
+        border-top: 1px solid #d1d1d1;
+        border-bottom: 1px solid #d1d1d1; } }
     @media (min-width: 1060px) {
       .catalog-filter__container--brands {
         padding-top: 12px;
@@ -1509,7 +1511,8 @@ a {
     @media (min-width: 1060px) {
       .catalog-filter__container--price {
         display: block;
-        border-top: 1px solid #d1d1d1; } }
+        border-top: 1px solid #d1d1d1;
+        border-bottom: 1px solid #d1d1d1; } }
 
 .category__list {
   padding: 0;
